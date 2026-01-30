@@ -14,6 +14,8 @@ import CategoryExplorer from "@/components/CategoryExplorer";
 import Testimonials from "@/components/Testimonials";
 import Newsletter from "@/components/Newsletter";
 
+export const dynamic = "force-dynamic";
+
 async function getCategoryData() {
   await dbConnect();
 
