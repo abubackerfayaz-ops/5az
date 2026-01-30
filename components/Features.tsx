@@ -17,7 +17,7 @@ export default function Features() {
                 <div className="p-8 border border-white/10 rounded-2xl bg-white/5 hover:border-neon-green transition-colors group">
                     <Zap className="w-12 h-12 mx-auto mb-4 text-neon-green group-hover:scale-110 transition-transform" />
                     <h3 className="text-xl font-black italic mb-2">EXCLUSIVE DROPS</h3>
-                    <p className="text-gray-400">Limited edition kits and retro classics you won't find anywhere else.</p>
+                    <p className="text-gray-400">Limited edition kits and retro classics you won&apos;t find anywhere else.</p>
                 </div>
             </div>
         </section>

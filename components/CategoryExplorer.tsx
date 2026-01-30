@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ProductCard from './ProductCard';
-import GlitchText from './GlitchText';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
@@ -42,8 +41,8 @@ export default function CategoryExplorer({
                                 key={cat.name}
                                 onClick={() => setActiveFilter(cat.filter)}
                                 className={`px-4 py-1 text-sm font-bold uppercase tracking-widest transition-all border-b-2 ${activeFilter === cat.filter
-                                        ? `${cat.color} border-current`
-                                        : 'text-gray-500 border-transparent hover:text-white'
+                                    ? `${cat.color} border-current`
+                                    : 'text-gray-500 border-transparent hover:text-white'
                                     }`}
                             >
                                 {cat.name}

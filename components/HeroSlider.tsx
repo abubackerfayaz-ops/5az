@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Zap, Ticket } from 'lucide-react';
+import { ArrowRight, Zap, Ticket } from 'lucide-react';
 import Link from 'next/link';
 import GlitchText from './GlitchText';
 

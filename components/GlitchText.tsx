@@ -1,8 +1,3 @@
-'use client';
-
-import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
-
 export default function GlitchText({ text, className }: { text: string, className?: string }) {
     return (
         <div className={`relative inline-block group ${className}`}>
