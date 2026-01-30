@@ -6,14 +6,11 @@ import Product from '@/models/Product';
 
 export const dynamic = 'force-dynamic';
 
-async function getProducts(searchParams: any) {
+async function getProducts(params: any) {
     try {
         await dbConnect();
 
         const query: any = {};
-
-        // ✅ unwrap the promise
-        const params = await searchParams;
 
         if (params?.category) query.category = params.category;
         if (params?.league) query.league = params.league;
@@ -30,8 +27,13 @@ async function getProducts(searchParams: any) {
     }
 }
 
-export default async function ShopPage({ searchParams }: { searchParams: { category?: string; league?: string; team?: string; search?: string } }) {
-    const products = await getProducts(searchParams);
+export default async function ShopPage({
+    searchParams
+}: {
+    searchParams: Promise<{ category?: string; league?: string; team?: string; search?: string }>
+}) {
+    const params = await searchParams;
+    const products = await getProducts(params);
 
     return (
         <main className="min-h-screen pt-16">
