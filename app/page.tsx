@@ -26,6 +26,7 @@ async function getCategoryData() {
     { name: "Spanish", filter: "La Liga", query: { league: /La Liga/i }, color: "text-neon-pink" },
     { name: "Training", filter: "Training", query: { name: /Training/i }, color: "text-neon-green" },
     { name: "Special", filter: "Special Edition", query: { name: /Special Edition/i }, color: "text-neon-blue" },
+    { name: "Merch", filter: "Merchandise", query: { $or: [{ name: /tee/i }, { name: /hoodie/i }, { name: /phone/i }, { name: /case/i }, { name: /cover/i }] }, color: "text-neon-pink" },
   ];
 
   const activeCategories = [];
@@ -37,7 +38,6 @@ async function getCategoryData() {
       activeCategories.push({ name: cat.name, filter: cat.filter, color: cat.color });
       productsByFilter[cat.filter] = JSON.parse(JSON.stringify(products));
     } else if (cat.name === "All") {
-      // Always include All if we have anything
       activeCategories.push({ name: cat.name, filter: cat.filter, color: cat.color });
       productsByFilter[cat.filter] = JSON.parse(JSON.stringify(products));
     }
@@ -49,7 +49,6 @@ async function getCategoryData() {
 export default async function Home() {
   const { activeCategories, productsByFilter } = await getCategoryData();
 
-  // All initial products for the explorer (from any category)
   const allInitial = productsByFilter[""] || [];
 
   return (
@@ -61,26 +60,24 @@ export default async function Home() {
         <Ticker />
       </ScrollReveal>
 
-      {/* Branded Dynamic Category Row - Only shows active categories */}
       <CategoryExplorer
         initialProducts={allInitial}
         categories={activeCategories}
       />
 
-      {/* Dynamic Thematic Sections based on available data */}
-      {activeCategories.filter(cat => cat.filter !== "").slice(0, 5).map((cat, idx) => (
+      {activeCategories.filter(cat => cat.filter !== "").slice(0, 6).map((cat, idx) => (
         <section key={cat.name} className={`py-20 px-4 md:px-8 max-w-7xl mx-auto border-t border-white/5 ${idx % 2 === 1 ? 'bg-white/5 rounded-[3rem] my-20' : ''}`}>
           <ScrollReveal>
             <div className="flex justify-between items-end mb-12">
               <div>
                 <h3 className={`${cat.color} font-bold tracking-wider mb-2 uppercase`}>
-                  {cat.name === 'Drops' ? 'NEW ERA' : cat.name === 'Retro' ? 'VINTAGE SOUL' : 'HERITAGE'}
+                  {cat.name === 'Drops' ? 'NEW ERA' : cat.name === 'Retro' ? 'VINTAGE SOUL' : cat.name === 'Merch' ? 'LIFESTYLE' : 'HERITAGE'}
                 </h3>
                 <div className="text-4xl md:text-5xl font-black italic">
                   <GlitchText text={cat.name.toUpperCase()} />
                 </div>
               </div>
-              <Link href={`/shop?category=${encodeURIComponent(cat.filter)}`} className="hidden md:flex items-center gap-2 text-gray-400 hover:text-white transition-colors uppercase font-bold text-sm tracking-widest">
+              <Link href={`/shop?${cat.name === 'Merch' ? 'search=Graphic+Tee' : `category=${encodeURIComponent(cat.filter)}`}`} className="hidden md:flex items-center gap-2 text-gray-400 hover:text-white transition-colors uppercase font-bold text-sm tracking-widest">
                 View Collection <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
