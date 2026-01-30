@@ -11,6 +11,8 @@ import GlitchText from "@/components/GlitchText";
 import ScrollReveal from "@/components/ScrollReveal";
 
 import CategoryExplorer from "@/components/CategoryExplorer";
+import Testimonials from "@/components/Testimonials";
+import Newsletter from "@/components/Newsletter";
 
 async function getProductsByCategory(category: string, limit = 4) {
   try {
@@ -112,6 +114,9 @@ export default async function Home() {
           ))}
         </div>
       </section>
+
+      <Testimonials />
+      <Newsletter />
 
       <ScrollReveal>
         <Features />
