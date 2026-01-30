@@ -18,6 +18,9 @@ async function getProducts(searchParams: any) {
         if (params?.category) query.category = params.category;
         if (params?.league) query.league = params.league;
         if (params?.team) query.team = params.team;
+        if (params?.search) {
+            query.name = { $regex: new RegExp(params.search, 'i') };
+        }
 
         const products = await Product.find(query).sort({ createdAt: -1 });
         return products;
@@ -27,7 +30,7 @@ async function getProducts(searchParams: any) {
     }
 }
 
-export default async function ShopPage({ searchParams }: { searchParams: { category?: string; league?: string; team?: string } }) {
+export default async function ShopPage({ searchParams }: { searchParams: { category?: string; league?: string; team?: string; search?: string } }) {
     const products = await getProducts(searchParams);
 
     return (

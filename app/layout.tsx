@@ -7,8 +7,9 @@ const unbounded = Unbounded({ subsets: ["latin"], variable: "--font-unbounded" }
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
-  title: "5AZ | Premium Jerseys",
-  description: "Get the latest football jerseys with Gen Z style.",
+  title: "5AZ | ELITE FOOTBALL CULTURE & PREMIUM JERSEYS",
+  description: "India's premier destination for high-end football kits, retro classics, and exclusive streetwear. Join the culture. Wear the legacy.",
+  keywords: ["football jerseys", "retro jerseys", "5az", "football culture", "india football kits", "premium jerseys"],
 };
 
 export default function RootLayout({
