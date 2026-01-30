@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Send, CheckCircle } from 'lucide-react';
 
 export default function Newsletter() {
@@ -48,7 +48,7 @@ export default function Newsletter() {
                                 className="flex flex-col items-center gap-4 text-neon-green py-4"
                             >
                                 <CheckCircle className="w-12 h-12" />
-                                <span className="font-black italic uppercase tracking-widest">You're in the elite squads!</span>
+                                <span className="font-black italic uppercase tracking-widest">You&apos;re in the elite squads!</span>
                             </motion.div>
                         ) : (
                             <motion.div
@@ -83,4 +83,3 @@ export default function Newsletter() {
     );
 }
 
-import { AnimatePresence } from 'framer-motion';

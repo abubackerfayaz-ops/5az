@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { Minus, Plus, Heart, Check } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
-import { motion } from 'framer-motion';
 
 interface ProductActionsProps {
     id: string;
@@ -61,8 +60,8 @@ export default function ProductActions({ id, name, price, image, sizes, inStock,
                                 key={size}
                                 onClick={() => setSelectedSize(size)}
                                 className={`w-12 h-12 flex items-center justify-center border transition-all font-bold ${selectedSize === size
-                                        ? 'bg-white text-black border-white'
-                                        : 'border-white/20 hover:border-white hover:bg-white hover:text-black'
+                                    ? 'bg-white text-black border-white'
+                                    : 'border-white/20 hover:border-white hover:bg-white hover:text-black'
                                     }`}
                             >
                                 {size}
@@ -96,8 +95,8 @@ export default function ProductActions({ id, name, price, image, sizes, inStock,
                     onClick={handleAddToCart}
                     disabled={added || !inStock}
                     className={`flex-1 font-black uppercase py-4 transition-all flex items-center justify-center gap-2 ${added
-                            ? 'bg-green-500 text-black'
-                            : 'bg-neon-blue text-black hover:bg-white'
+                        ? 'bg-green-500 text-black'
+                        : 'bg-neon-blue text-black hover:bg-white'
                         }`}
                 >
                     {added ? 'Added to Cart' : 'Add to Cart'}
