@@ -8,13 +8,15 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      - key: NEXTAUTH_URL
-        sync: false # User must set this manually in Dashboard
-      - key: NEXTAUTH_SECRET
-        sync: false
       - key: MONGODB_URI
-        sync: false
+        value: mongodb+srv://abufayaz:r8KFNrpWyn11R22v@cluster0.jmdh0hc.mongodb.net/
+      - key: NEXTAUTH_SECRET
+        value: changeme_dev_secret_123
       - key: RAZORPAY_KEY_ID
-        sync: false
+        value: rzp_test_placeholder
       - key: RAZORPAY_KEY_SECRET
-        sync: false
+        value: secret_placeholder
+      - key: NEXTAUTH_URL
+        value: https://YOUR_APP_NAME.onrender.com # UPDATE THIS AFTER DEPLOY!
+      - key: NEXT_PUBLIC_RAZORPAY_KEY_ID
+        value: rzp_test_placeholder
