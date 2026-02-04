@@ -3,92 +3,98 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ProductCard from './ProductCard';
-import { ArrowRight } from 'lucide-react';
-import Link from 'next/link';
+import { LayoutGrid, SlidersHorizontal, Zap, Database } from 'lucide-react';
 
 interface Product {
     _id: string;
     name: string;
-    price: number;
-    originalPrice?: number;
-    images: string[];
-    category: string;
+    variants: Array<{
+        price: { amount: number; originalAmount?: number };
+        images: Array<{ url: string }>;
+    }>;
+    category?: string;
+    brand?: string;
 }
 
 export default function CategoryExplorer({
-    initialProducts,
+    productsByFilter,
     categories
 }: {
-    initialProducts: Product[],
+    productsByFilter: Record<string, Product[]>,
     categories: { name: string, filter: string, color: string }[]
 }) {
     const [activeFilter, setActiveFilter] = useState(categories[0].filter);
 
-    const filteredProducts = initialProducts
-        .filter(p => !activeFilter || p.category.toLowerCase().includes(activeFilter.toLowerCase()))
-        .slice(0, 4);
+    const displayedProducts = productsByFilter[activeFilter] || [];
 
     return (
-        <section className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-12">
-                <div className="flex items-center gap-6">
-                    <div className="bg-white text-black px-4 py-2 font-black italic text-2xl skew-x-[-10deg]">
-                        5AZ
-                    </div>
-                    <div className="flex flex-wrap gap-4">
+        <section className="relative z-20">
+            <div className="flex flex-col gap-16 mb-20">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-12 bg-black py-4 px-8 rounded-full border border-white/5">
+                    {/* Category Selection - Minimal Capsules */}
+                    <div className="flex flex-wrap gap-12 items-center">
                         {categories.map((cat) => (
                             <button
                                 key={cat.name}
                                 onClick={() => setActiveFilter(cat.filter)}
-                                className={`px-4 py-1 text-sm font-bold uppercase tracking-widest transition-all border-b-2 ${activeFilter === cat.filter
-                                    ? `${cat.color} border-current`
-                                    : 'text-gray-500 border-transparent hover:text-white'
+                                className={`relative px-8 py-3 rounded-full text-[10px] font-display font-black uppercase tracking-[0.2em] transition-all duration-500 overflow-hidden group ${activeFilter === cat.filter
+                                    ? 'text-black'
+                                    : 'text-white/30 hover:text-white'
                                     }`}
                             >
-                                {cat.name}
+                                {activeFilter === cat.filter && (
+                                    <motion.div
+                                        layoutId="activeTabBase"
+                                        className="absolute inset-0 bg-gradient-to-r from-[#D9FF00] via-white to-[#00FFFF]"
+                                        initial={false}
+                                        transition={{ type: "spring", bounce: 0.1, duration: 0.6 }}
+                                    />
+                                )}
+                                <span className="relative z-10">{cat.name}</span>
                             </button>
                         ))}
                     </div>
                 </div>
-                <Link
-                    href={`/shop?category=${encodeURIComponent(activeFilter)}`}
-                    className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors uppercase font-bold text-sm tracking-widest border border-white/10 px-6 py-2 rounded-full hover:bg-white/5"
-                >
-                    Explore {activeFilter || 'All'} <ArrowRight className="w-4 h-4" />
-                </Link>
             </div>
 
-            <motion.div
-                layout
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
-            >
-                <AnimatePresence mode='popLayout'>
-                    {filteredProducts.map((product, idx) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-12 gap-y-24 md:gap-x-16 md:gap-y-32">
+                <AnimatePresence mode='wait'>
+                    {displayedProducts.length > 0 ? (
+                        displayedProducts.map((product, idx) => (
+                            <motion.div
+                                key={`${activeFilter}-${product._id}`}
+                                initial={{ opacity: 0, scale: 0.9, y: 40 }}
+                                animate={{ opacity: 1, scale: 1, y: 0 }}
+                                exit={{ opacity: 0, scale: 0.9, y: 20 }}
+                                transition={{
+                                    duration: 0.8,
+                                    delay: idx * 0.05,
+                                    ease: [0.16, 1, 0.3, 1]
+                                }}
+                            >
+                                <ProductCard
+                                    id={product._id}
+                                    name={product.name}
+                                    price={product.variants[0]?.price?.amount || 0}
+                                    originalPrice={product.variants[0]?.price?.originalAmount}
+                                    image={product.variants[0]?.images[0]?.url}
+                                    category={product.category || activeFilter || "Official"}
+                                    brand={product.brand}
+                                />
+                            </motion.div>
+                        ))
+                    ) : (
                         <motion.div
-                            key={product._id}
-                            layout
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            exit={{ opacity: 0, scale: 0.9 }}
-                            transition={{ duration: 0.3, delay: idx * 0.05 }}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            className="col-span-full py-60 text-center rounded-[4rem] border border-dashed border-white/5 bg-white/[0.02]"
                         >
-                            <ProductCard
-                                id={product._id}
-                                name={product.name}
-                                price={product.price}
-                                originalPrice={product.originalPrice}
-                                image={product.images[0]}
-                                category={product.category}
-                            />
+                            <div className="text-5xl md:text-8xl font-display font-black italic text-white/[0.03] uppercase tracking-tighter mb-8">ARCHIVE_EMPTY</div>
+                            <p className="text-[#D9FF00] font-mono text-[10px] uppercase tracking-[0.5em] animate-pulse opacity-50">Synchronizing with high-priority vaults...</p>
                         </motion.div>
-                    ))}
+                    )}
                 </AnimatePresence>
-                {filteredProducts.length === 0 && (
-                    <div className="col-span-full text-center py-20 text-gray-500 italic">
-                        No kits found in this category yet.
-                    </div>
-                )}
-            </motion.div>
+            </div>
         </section>
     );
 }

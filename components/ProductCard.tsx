@@ -1,71 +1,82 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
-import { ShoppingCart, Heart } from 'lucide-react';
+import { ShoppingBag, Zap } from 'lucide-react';
 
 interface ProductCardProps {
     id: string;
     name: string;
     price: number;
     originalPrice?: number;
-    image: string;
+    image?: string;
     category: string;
+    brand?: string;
 }
 
-export default function ProductCard({ id, name, price, originalPrice, image, category }: ProductCardProps) {
+export default function ProductCard({ id, name, price, originalPrice, image, category, brand }: ProductCardProps) {
+    const displayImage = image || "https://placehold.co/500x700";
+
     return (
-        <div className="group relative bg-white/5 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden hover:border-neon-blue/50 hover:shadow-[0_0_20px_rgba(0,243,255,0.2)] transition-all duration-500 hover:-translate-y-2">
+        <div className="group relative bg-[#0a0a0a] rounded-2xl overflow-hidden border border-white/5 transition-all duration-700 hover:border-[#D9FF00]/30 hover:shadow-[0_0_50px_-15px_rgba(217,255,0,0.15)]">
             {/* Image Container */}
-            <div className="relative aspect-square overflow-hidden bg-black/20">
-                <Image
-                    src={image}
+            <div className="relative aspect-[4/5] overflow-hidden bg-[#0a0a0a]">
+                <img
+                    src={displayImage}
                     alt={name}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110 group-hover:rotate-1"
+                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-[1s] group-hover:scale-110 grayscale-[0.1] group-hover:grayscale-0"
                 />
 
-                {/* Badge with properties */}
-                <div className="absolute top-3 left-3 bg-black/60 backdrop-blur-md border border-neon-blue/30 text-neon-blue text-[10px] font-black px-3 py-1 uppercase tracking-wider rounded-full">
-                    {category}
+                {/* Cyber Badge */}
+                <div className="absolute top-4 left-4">
+                    <span className="bg-black/90 backdrop-blur-xl text-[8px] font-mono font-bold text-[#D9FF00] px-3 py-1.5 rounded-full uppercase tracking-widest border border-[#D9FF00]/20 shadow-[0_0_20px_rgba(217,255,0,0.1)]">
+                        {category}
+                    </span>
                 </div>
 
-                {/* Quick Action Overlay */}
-                <div className="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-gradient-to-t from-black/90 to-transparent">
-                    <button className="w-full bg-white text-black font-black uppercase py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-neon-green hover:shadow-lg hover:shadow-neon-green/20 transition-all transform active:scale-95">
-                        <ShoppingCart className="w-4 h-4" /> Add to Cart
+                {/* Hyper Add Button Overlay */}
+                <div className="absolute inset-x-0 bottom-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-[0.22,1,0.36,1]">
+                    <button className="w-full h-14 bg-gradient-to-r from-[#D9FF00] via-white to-[#00FFFF] text-black font-display font-black text-[10px] uppercase tracking-[0.3em] rounded-xl flex items-center justify-center gap-4 hover:scale-105 transition-all active:scale-95 shadow-2xl">
+                        ADD TO BAG <div className="w-2 h-2 rounded-full bg-black animate-pulse" />
                     </button>
                 </div>
-
-                {/* Wishlist Button */}
-                <button className="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/40 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-neon-pink hover:border-neon-pink hover:text-white transition-all opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0">
-                    <Heart className="w-4 h-4" />
-                </button>
             </div>
 
-            {/* Info Section */}
-            <div className="p-5">
-                <div className="h-0.5 w-10 bg-white/10 mb-4 group-hover:w-full group-hover:bg-neon-blue transition-all duration-500"></div>
-                <h3 className="text-lg font-bold truncate text-white group-hover:text-neon-blue transition-colors mb-2 font-display">
+            {/* Content Area */}
+            <div className="p-8 pb-10 flex flex-col gap-5 bg-gradient-to-b from-transparent to-[#D9FF00]/5">
+                <div className="flex flex-col gap-2">
+                    {brand && (
+                        <span className="text-[10px] font-mono font-bold text-white/20 uppercase tracking-[0.3em]">
+                            {brand}
+                        </span>
+                    )}
                     <Link href={`/product/${id}`}>
-                        {name}
+                        <h3 className="text-lg font-display font-black uppercase text-white tracking-tight leading-snug group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-[#D9FF00] group-hover:to-[#00FFFF] transition-all duration-500">
+                            {name}
+                        </h3>
                     </Link>
-                </h3>
-                <div className="flex items-end justify-between">
-                    <div className="flex flex-col">
-                        <span className="text-xs text-gray-400 uppercase tracking-widest font-bold">Price</span>
-                        <div className="flex items-center gap-2">
-                            <span className="text-2xl font-black italic text-white">₹{price}</span>
-                            {originalPrice && (
-                                <span className="text-sm text-white/40 line-through decoration-neon-pink">₹{originalPrice}</span>
-                            )}
-                        </div>
+                    <div className="flex items-center gap-4">
+                        <span className="text-2xl font-display font-black text-white italic tracking-tighter">
+                            ₹{price.toLocaleString()}
+                        </span>
+                        {originalPrice && (
+                            <span className="text-[10px] font-mono text-[#FF0080]/60 line-through tracking-widest">
+                                ₹{originalPrice.toLocaleString()}
+                            </span>
+                        )}
+                    </div>
+                </div>
+
+                <div className="flex items-center justify-between text-[8px] font-mono font-bold text-white/20 uppercase tracking-[0.4em] border-t border-white/5 pt-6">
+                    <div className="flex items-center gap-2">
+                        <div className="w-2 h-2 rounded-full bg-[#00FFFF] shadow-[0_0_10px_#00FFFF] animate-pulse" />
+                        <span>Ready_Ship</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <div className="w-2 h-2 rounded-full bg-white/10" />
+                        <span className="text-white/10 group-hover:text-[#D9FF00]/50 transition-colors">Archived</span>
                     </div>
                 </div>
             </div>
-
-            {/* Corner Accent */}
-            <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-neon-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-bl-3xl"></div>
         </div>
     );
 }

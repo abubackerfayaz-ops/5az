@@ -29,9 +29,9 @@ export default function Testimonials() {
         <section className="py-24 px-4 bg-black relative">
             <div className="max-w-7xl mx-auto">
                 <div className="mb-16 text-center md:text-left">
-                    <h3 className="text-neon-pink font-bold tracking-widest uppercase mb-2">VERIFIED DROPS</h3>
-                    <h2 className="text-4xl md:text-5xl font-black italic uppercase tracking-tighter">
-                        WHAT THE <span className="text-white">ULTREAS</span> SAY
+                    <h3 className="text-neon-lime font-sans font-bold tracking-[0.3em] uppercase text-[10px] mb-2 drop-shadow-[0_0_5px_rgba(204,255,0,0.5)]">VERIFIED REVIEWS</h3>
+                    <h2 className="text-3xl md:text-5xl font-display font-black italic uppercase tracking-tighter text-white">
+                        INSIDE THE <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-electric-purple">INNER CIRCLE.</span>
                     </h2>
                 </div>
 
@@ -42,23 +42,23 @@ export default function Testimonials() {
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: i * 0.1 }}
-                            className="p-8 bg-neutral-900/50 border border-white/10 rounded-3xl relative group hover:border-neon-pink transition-colors"
+                            className="p-8 bg-white/5 border border-white/10 rounded-3xl relative group hover:border-white/20 hover:bg-white/10 transition-all duration-500 backdrop-blur-sm"
                         >
-                            <Quote className="absolute top-6 right-6 w-8 h-8 text-white/10 group-hover:text-neon-pink/20 transition-colors" />
+                            <Quote className="absolute top-6 right-6 w-8 h-8 text-white/10 group-hover:text-neon-lime/20 transition-colors" />
 
                             <div className="flex gap-1 mb-6">
                                 {[...Array(review.rating)].map((_, i) => (
-                                    <Star key={i} className="w-4 h-4 fill-neon-pink text-neon-pink" />
+                                    <Star key={i} className="w-3 h-3 fill-neon-lime text-neon-lime drop-shadow-[0_0_5px_rgba(204,255,0,0.5)]" />
                                 ))}
                             </div>
 
-                            <p className="text-gray-300 mb-8 italic text-lg leading-relaxed">
+                            <p className="text-neutral-300 mb-8 font-sans font-medium text-lg leading-relaxed">
                                 &quot;{review.text}&quot;
                             </p>
 
                             <div>
-                                <h4 className="font-black italic text-white uppercase tracking-widest">{review.name}</h4>
-                                <span className="text-xs text-gray-500 uppercase font-bold">{review.role}</span>
+                                <h4 className="font-display font-black italic text-white uppercase tracking-widest">{review.name}</h4>
+                                <span className="text-[10px] text-neutral-500 uppercase font-mono font-bold tracking-widest">{review.role}</span>
                             </div>
                         </motion.div>
                     ))}

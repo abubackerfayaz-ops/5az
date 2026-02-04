@@ -1,109 +1,148 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+@layer base {
+    :root {
+        --background: 0 0% 2%;
+        --foreground: 0 0% 100%;
+        --primary: 326 100% 60%;
+        /* Hyper Pink */
+        --secondary: 190 100% 50%;
+        /* Cyan */
+        --radius: 3rem;
+    }
 
-  --color-neon-blue: #00f3ff;
-  --color-neon-pink: #ff00ff;
-  --color-neon-green: #00ff9d;
-
-  --font-display: var(--font-unbounded), sans-serif;
-  --font-bebas: var(--font-unbounded);
-  /* Legacy mapping */
-  --font-outfit: var(--font-outfit);
-  /* Legacy mapping */
-
-  --font-unbounded: var(--font-unbounded);
-  --font-outfit: var(--font-outfit);
-
-  --animate-spin-slow: spin 8s linear infinite;
-  --animate-pulse-fast: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    body {
+        @apply bg-[#000000] text-white font-sans antialiased selection:bg-[#D9FF00] selection:text-black;
+        font-size: 8.5px;
+        line-height: 1.4;
+        overflow-x: hidden;
+        cursor: crosshair;
+    }
 }
 
-:root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: var(--font-outfit), sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-unbounded), sans-serif;
-}
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #1a1a1a;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #3b82f6;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #2563eb;
-}
-
-@utility text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600;
-}
-
-@utility glass-panel {
-  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+@media (min-width: 768px) {
+    body {
+        font-size: 10px;
+    }
 }
 
 @layer utilities {
-  .bg-noise {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    z-index: 50;
-    opacity: 0.05;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  }
 
-  .bg-grid {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200vw;
-    height: 200vh;
-    background-image:
-      linear-gradient(rgba(0, 243, 255, 0.1) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0, 243, 255, 0.1) 1px, transparent 1px);
-    background-size: 50px 50px;
-    transform: perspective(500px) rotateX(60deg) translateY(-100px) translateZ(-200px);
-    animation: grid-move 20s linear infinite;
-    pointer-events: none;
-    z-index: -1;
-    opacity: 0.2;
-  }
+    /* Scale down all Tailwind font sizes proportionally */
+    .text-xs {
+        font-size: 0.45rem;
+    }
+
+    .text-sm {
+        font-size: 0.55rem;
+    }
+
+    .text-base {
+        font-size: 0.65rem;
+    }
+
+    .text-lg {
+        font-size: 0.75rem;
+    }
+
+    .text-xl {
+        font-size: 0.85rem;
+    }
+
+    .text-2xl {
+        font-size: 1rem;
+    }
+
+    .text-3xl {
+        font-size: 1.125rem;
+    }
+
+    .text-4xl {
+        font-size: 1.35rem;
+    }
+
+    .text-5xl {
+        font-size: 1.6rem;
+    }
+
+    .text-6xl {
+        font-size: 1.85rem;
+    }
+
+    .text-7xl {
+        font-size: 2.1rem;
+    }
+
+    .text-8xl {
+        font-size: 2.35rem;
+    }
+
+    .text-9xl {
+        font-size: 2.6rem;
+    }
 }
 
-@keyframes grid-move {
-  0% {
-    transform: perspective(500px) rotateX(60deg) translateY(0) translateZ(-200px);
-  }
+@layer utilities {
 
-  100% {
-    transform: perspective(500px) rotateX(60deg) translateY(50px) translateZ(-200px);
-  }
+
+    .bento-card {
+        @apply relative overflow-hidden rounded-[3.5rem] border border-white/[0.05] bg-black transition-all duration-1000;
+        transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+    }
+
+    .bento-card:hover {
+        @apply border-[#D9FF00]/20 bg-white/[0.03];
+        box-shadow: 0 0 100px -20px rgba(217, 255, 0, 0.15);
+        transform: translateY(-5px);
+    }
+
+    .cyber-grid {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        background-size: 80px 80px;
+        mask-image: radial-gradient(circle at center, black, transparent 80%);
+    }
+
+    .text-stroke-modern {
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+        color: transparent;
+    }
+
+    .glow-dot {
+        @apply w-2 h-2 rounded-full;
+        box-shadow: 0 0 15px currentColor;
+    }
+}
+
+/* Better Smooth Scrolling natively if Lenis fails */
+html {
+    scroll-behavior: smooth;
+    background: #000000;
+}
+
+/* Premium Scrollbar - Invisible but functional */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FF0080;
+}
+
+/* Custom Selection Color */
+::selection {
+    background: #D9FF00;
+    color: black;
 }

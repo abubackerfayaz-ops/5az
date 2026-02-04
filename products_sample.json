@@ -1,0 +1,656 @@
+[
+  {
+    "_id": "697c4ec3ed6cd0e336a9d9cc",
+    "name": "Real Madrid Home Mbappe 2025-26 Jersey",
+    "slug": "real-madrid-home-mbappe-2025-26",
+    "description": "Premium quality Real Madrid Home jersey for the 2025-26 season. Features moisture-wicking fabric and official branding.",
+    "brand": "5AZ",
+    "categories": [
+      "6980c757ced4ee73b65d1aa5"
+    ],
+    "attributes": [
+      {
+        "name": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "XXL"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "_id": "6980c7590aff208b6a07e1e3",
+        "sku": "REAL-MADRID-HOME-MBAPPE-2025-26-S",
+        "attributes": {
+          "Size": "S"
+        },
+        "price": {
+          "amount": 1125,
+          "currency": "INR",
+          "originalAmount": 4999
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "Real Madrid Home Mbappe 2025-26 Jersey - S"
+          }
+        ],
+        "isActive": true
+      },
+      {
+        "_id": "6980c7590aff208b6a07e1e4",
+        "sku": "REAL-MADRID-HOME-MBAPPE-2025-26-M",
+        "attributes": {
+          "Size": "M"
+        },
+        "price": {
+          "amount": 1125,
+          "currency": "INR",
+          "originalAmount": 4999
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "Real Madrid Home Mbappe 2025-26 Jersey - M"
+          }
+        ],
+        "isActive": true
+      },
+      {
+        "_id": "6980c7590aff208b6a07e1e5",
+        "sku": "REAL-MADRID-HOME-MBAPPE-2025-26-L",
+        "attributes": {
+          "Size": "L"
+        },
+        "price": {
+          "amount": 1125,
+          "currency": "INR",
+          "originalAmount": 4999
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "Real Madrid Home Mbappe 2025-26 Jersey - L"
+          }
+        ],
+        "isActive": true
+      },
+      {
+        "_id": "6980c7590aff208b6a07e1e6",
+        "sku": "REAL-MADRID-HOME-MBAPPE-2025-26-XL",
+        "attributes": {
+          "Size": "XL"
+        },
+        "price": {
+          "amount": 1125,
+          "currency": "INR",
+          "originalAmount": 4999
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "Real Madrid Home Mbappe 2025-26 Jersey - XL"
+          }
+        ],
+        "isActive": true
+      },
+      {
+        "_id": "6980c7590aff208b6a07e1e7",
+        "sku": "REAL-MADRID-HOME-MBAPPE-2025-26-XXL",
+        "attributes": {
+          "Size": "XXL"
+        },
+        "price": {
+          "amount": 1125,
+          "currency": "INR",
+          "originalAmount": 4999
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "Real Madrid Home Mbappe 2025-26 Jersey - XXL"
+          }
+        ],
+        "isActive": true
+      }
+    ],
+    "metaTitle": "Real Madrid Home Mbappe 2025-26 Jersey",
+    "metaDescription": "Premium quality Real Madrid Home jersey for the 2025-26 season. Features moisture-wicking fabric and official branding.",
+    "tags": [
+      "Season 25-26",
+      "Real Madrid",
+      "La Liga"
+    ],
+    "team": "Real Madrid",
+    "league": "La Liga",
+    "season": null,
+    "isActive": true,
+    "createdAt": "2026-01-30T06:25:07.387Z",
+    "updatedAt": "2026-02-02T15:48:41.072Z"
+  },
+  {
+    "_id": "697c4ec3ed6cd0e336a9d9cd",
+    "name": "France Home 2025-26 Jersey",
+    "slug": "france-home-2025-26",
+    "description": "Official France National Team Home Kit. Elegant design with tricolor details.",
+    "brand": "5AZ",
+    "categories": [
+      "6980c757ced4ee73b65d1aa2"
+    ],
+    "attributes": [
+      {
+        "name": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "_id": "6980c7590aff208b6a07e1e8",
+        "sku": "FRANCE-HOME-2025-26-S",
+        "attributes": {
+          "Size": "S"
+        },
+        "price": {
+          "amount": 1299,
+          "currency": "INR",
+          "originalAmount": 3999
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1543351611-58f69d7c1781?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "France Home 2025-26 Jersey - S"
+          }
+        ],
+        "isActive": true
+      },
+      {
+        "_id": "6980c7590aff208b6a07e1e9",
+        "sku": "FRANCE-HOME-2025-26-M",
+        "attributes": {
+          "Size": "M"
+        },
+        "price": {
+          "amount": 1299,
+          "currency": "INR",
+          "originalAmount": 3999
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1543351611-58f69d7c1781?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "France Home 2025-26 Jersey - M"
+          }
+        ],
+        "isActive": true
+      },
+      {
+        "_id": "6980c7590aff208b6a07e1ea",
+        "sku": "FRANCE-HOME-2025-26-L",
+        "attributes": {
+          "Size": "L"
+        },
+        "price": {
+          "amount": 1299,
+          "currency": "INR",
+          "originalAmount": 3999
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1543351611-58f69d7c1781?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "France Home 2025-26 Jersey - L"
+          }
+        ],
+        "isActive": true
+      },
+      {
+        "_id": "6980c7590aff208b6a07e1eb",
+        "sku": "FRANCE-HOME-2025-26-XL",
+        "attributes": {
+          "Size": "XL"
+        },
+        "price": {
+          "amount": 1299,
+          "currency": "INR",
+          "originalAmount": 3999
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1543351611-58f69d7c1781?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "France Home 2025-26 Jersey - XL"
+          }
+        ],
+        "isActive": true
+      }
+    ],
+    "metaTitle": "France Home 2025-26 Jersey",
+    "metaDescription": "Official France National Team Home Kit. Elegant design with tricolor details.",
+    "tags": [
+      "International",
+      "France",
+      "International"
+    ],
+    "team": "France",
+    "league": "International",
+    "season": null,
+    "isActive": true,
+    "createdAt": "2026-01-30T06:25:07.390Z",
+    "updatedAt": "2026-02-02T15:48:41.161Z"
+  },
+  {
+    "_id": "697c4ec3ed6cd0e336a9d9ce",
+    "name": "Manchester City Home 2024-25",
+    "slug": "man-city-home-2024-25",
+    "description": "The sky blue classic. Comfortable fit for match day or casual wear.",
+    "brand": "5AZ",
+    "categories": [
+      "6980c757ced4ee73b65d1aa4"
+    ],
+    "attributes": [
+      {
+        "name": "Size",
+        "values": [
+          "M",
+          "L"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "_id": "6980c7590aff208b6a07e1ec",
+        "sku": "MAN-CITY-HOME-2024-25-M",
+        "attributes": {
+          "Size": "M"
+        },
+        "price": {
+          "amount": 999,
+          "currency": "INR",
+          "originalAmount": 2499
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1628891890377-571b7829875a?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "Manchester City Home 2024-25 - M"
+          }
+        ],
+        "isActive": true
+      },
+      {
+        "_id": "6980c7590aff208b6a07e1ed",
+        "sku": "MAN-CITY-HOME-2024-25-L",
+        "attributes": {
+          "Size": "L"
+        },
+        "price": {
+          "amount": 999,
+          "currency": "INR",
+          "originalAmount": 2499
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1628891890377-571b7829875a?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "Manchester City Home 2024-25 - L"
+          }
+        ],
+        "isActive": true
+      }
+    ],
+    "metaTitle": "Manchester City Home 2024-25",
+    "metaDescription": "The sky blue classic. Comfortable fit for match day or casual wear.",
+    "tags": [
+      "Season 24-25",
+      "Manchester City",
+      "Premier League"
+    ],
+    "team": "Manchester City",
+    "league": "Premier League",
+    "season": null,
+    "isActive": true,
+    "createdAt": "2026-01-30T06:25:07.390Z",
+    "updatedAt": "2026-02-02T15:48:41.266Z"
+  },
+  {
+    "_id": "697c4ec3ed6cd0e336a9d9cf",
+    "name": "Arsenal Away 2025-26",
+    "slug": "arsenal-away-2025-26",
+    "description": "New season away kit with bold colors.",
+    "brand": "5AZ",
+    "categories": [
+      "6980c757ced4ee73b65d1aa5"
+    ],
+    "attributes": [
+      {
+        "name": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "_id": "6980c7590aff208b6a07e1ee",
+        "sku": "ARSENAL-AWAY-2025-26-S",
+        "attributes": {
+          "Size": "S"
+        },
+        "price": {
+          "amount": 1150,
+          "currency": "INR",
+          "originalAmount": 4500
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1519475685814-6a0d63503a6a?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "Arsenal Away 2025-26 - S"
+          }
+        ],
+        "isActive": true
+      },
+      {
+        "_id": "6980c7590aff208b6a07e1ef",
+        "sku": "ARSENAL-AWAY-2025-26-M",
+        "attributes": {
+          "Size": "M"
+        },
+        "price": {
+          "amount": 1150,
+          "currency": "INR",
+          "originalAmount": 4500
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1519475685814-6a0d63503a6a?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "Arsenal Away 2025-26 - M"
+          }
+        ],
+        "isActive": true
+      },
+      {
+        "_id": "6980c7590aff208b6a07e1f0",
+        "sku": "ARSENAL-AWAY-2025-26-L",
+        "attributes": {
+          "Size": "L"
+        },
+        "price": {
+          "amount": 1150,
+          "currency": "INR",
+          "originalAmount": 4500
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1519475685814-6a0d63503a6a?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "Arsenal Away 2025-26 - L"
+          }
+        ],
+        "isActive": true
+      },
+      {
+        "_id": "6980c7590aff208b6a07e1f1",
+        "sku": "ARSENAL-AWAY-2025-26-XL",
+        "attributes": {
+          "Size": "XL"
+        },
+        "price": {
+          "amount": 1150,
+          "currency": "INR",
+          "originalAmount": 4500
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1519475685814-6a0d63503a6a?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "Arsenal Away 2025-26 - XL"
+          }
+        ],
+        "isActive": true
+      }
+    ],
+    "metaTitle": "Arsenal Away 2025-26",
+    "metaDescription": "New season away kit with bold colors.",
+    "tags": [
+      "Season 25-26",
+      "Arsenal",
+      "Premier League"
+    ],
+    "team": "Arsenal",
+    "league": "Premier League",
+    "season": null,
+    "isActive": true,
+    "createdAt": "2026-01-30T06:25:07.390Z",
+    "updatedAt": "2026-02-02T15:48:41.332Z"
+  },
+  {
+    "_id": "697c4ec3ed6cd0e336a9d9d0",
+    "name": "FC Barcelona Home 2025-26",
+    "slug": "barcelona-home-2025-26",
+    "description": "Classic Blaugrana stripes. Represents the heart of Catalonia.",
+    "brand": "5AZ",
+    "categories": [
+      "6980c757ced4ee73b65d1aa5"
+    ],
+    "attributes": [
+      {
+        "name": "Size",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "_id": "6980c7590aff208b6a07e1f2",
+        "sku": "BARCELONA-HOME-2025-26-S",
+        "attributes": {
+          "Size": "S"
+        },
+        "price": {
+          "amount": 1199,
+          "currency": "INR",
+          "originalAmount": 4800
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "FC Barcelona Home 2025-26 - S"
+          }
+        ],
+        "isActive": true
+      },
+      {
+        "_id": "6980c7590aff208b6a07e1f3",
+        "sku": "BARCELONA-HOME-2025-26-M",
+        "attributes": {
+          "Size": "M"
+        },
+        "price": {
+          "amount": 1199,
+          "currency": "INR",
+          "originalAmount": 4800
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "FC Barcelona Home 2025-26 - M"
+          }
+        ],
+        "isActive": true
+      },
+      {
+        "_id": "6980c7590aff208b6a07e1f4",
+        "sku": "BARCELONA-HOME-2025-26-L",
+        "attributes": {
+          "Size": "L"
+        },
+        "price": {
+          "amount": 1199,
+          "currency": "INR",
+          "originalAmount": 4800
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "FC Barcelona Home 2025-26 - L"
+          }
+        ],
+        "isActive": true
+      },
+      {
+        "_id": "6980c7590aff208b6a07e1f5",
+        "sku": "BARCELONA-HOME-2025-26-XL",
+        "attributes": {
+          "Size": "XL"
+        },
+        "price": {
+          "amount": 1199,
+          "currency": "INR",
+          "originalAmount": 4800
+        },
+        "inventory": {
+          "quantity": 0,
+          "lowStockThreshold": 5,
+          "reserved": 0
+        },
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?q=80&w=1000&auto=format&fit=crop",
+            "isPrimary": true,
+            "alt": "FC Barcelona Home 2025-26 - XL"
+          }
+        ],
+        "isActive": true
+      }
+    ],
+    "metaTitle": "FC Barcelona Home 2025-26",
+    "metaDescription": "Classic Blaugrana stripes. Represents the heart of Catalonia.",
+    "tags": [
+      "Season 25-26",
+      "Barcelona",
+      "La Liga"
+    ],
+    "team": "Barcelona",
+    "league": "La Liga",
+    "season": null,
+    "isActive": true,
+    "createdAt": "2026-01-30T06:25:07.391Z",
+    "updatedAt": "2026-02-02T15:48:41.413Z"
+  }
+]

@@ -1,92 +1,95 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { ArrowRight, Zap, Ticket } from 'lucide-react';
+import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
+import { ArrowRight, Sparkles, Zap, Shield, Play } from 'lucide-react';
 import Link from 'next/link';
-import GlitchText from './GlitchText';
+import Image from 'next/image';
+import { useRef, useState, useEffect } from 'react';
 
 export default function HeroSlider() {
+    const containerRef = useRef<HTMLDivElement>(null);
+    const { scrollY } = useScroll();
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
+    const opacity = useTransform(scrollY, [0, 500], [1, 0]);
+
+    if (!isMounted) return <div className="h-screen bg-[#030303]" />;
+
     return (
-        <section className="relative w-full min-h-[90vh] bg-black flex flex-col items-center justify-center py-20 overflow-hidden">
-
-            {/* Ambient Background */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,243,255,0.1),transparent_70%)]" />
-            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
-
-            <div className="relative w-full max-w-6xl px-4 flex flex-col gap-8 md:gap-0">
-
-                {/* 1. FOOTBALL JERSEYS (Top Card - Centered) */}
-                <motion.div
-                    initial={{ y: -50, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.8, type: "spring" }}
-                    whileHover={{ scale: 1.02, zIndex: 10 }}
-                    className="relative w-full md:w-[85%] lg:w-[75%] h-[40vh] bg-neutral-900 rounded-3xl overflow-hidden self-center border border-white/10 group shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-10"
-                >
-                    <div
-                        className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                        style={{ backgroundImage: 'url("https://images.hdqwalls.com/download/lionel-messi-and-cristiano-ronaldo-louis-vuitton-5k-8a-3840x2160.jpg")' }}
-                    />
-                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
-
-                    <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-between">
-                        <div className="flex justify-between items-start">
-                            <div className="bg-neon-blue text-black px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest border-2 border-transparent group-hover:border-white transition-all">
-                                Season 25/26
-                            </div>
-                            <Zap className="text-white w-8 h-8 opacity-50 group-hover:text-neon-blue group-hover:opacity-100 transition-all" />
-                        </div>
-
-                        <div>
-                            <h1 className="text-5xl md:text-7xl font-black italic uppercase text-white tracking-tighter leading-none mb-4 drop-shadow-xl">
-                                <GlitchText text="FOOTBALL" />
-                                <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-white">JERSEYS</span>
-                            </h1>
-                            <Link href="/shop" className="inline-flex items-center gap-2 text-white border-b-2 border-neon-blue pb-1 font-bold uppercase tracking-wider hover:text-neon-blue transition-colors">
-                                Shop Collection <ArrowRight className="w-4 h-4" />
-                            </Link>
-                        </div>
-                    </div>
-                </motion.div>
-
-                {/* 2. CLEARANCE (Bottom Card - Centered) */}
-                <motion.div
-                    initial={{ y: 50, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
-                    whileHover={{ scale: 1.02, zIndex: 20 }}
-                    className="relative w-full md:w-[85%] lg:w-[75%] h-[35vh] bg-red-900/20 rounded-3xl overflow-hidden self-center mt-4 border border-white/10 group backdrop-blur-md shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-10"
-                >
-                    <div
-                        className="absolute inset-0 bg-cover bg-[center_top] opacity-60 group-hover:opacity-80 transition-opacity duration-500 grayscale group-hover:grayscale-0"
-                        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1626244422230-05047b973a5a?q=80&w=1920&fit=crop")' }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-r from-red-900/90 to-black/50" />
-
-                    {/* "Sticker" Element */}
-                    <div className="absolute top-4 right-4 bg-yellow-400 text-black p-4 rounded-full rotate-12 font-black text-center leading-tight shadow-lg border-2 border-black transform group-hover:rotate-180 transition-transform duration-500">
-                        60%<br />OFF
-                    </div>
-
-                    <div className="absolute inset-0 p-8 flex flex-col justify-center">
-                        <div className="flex items-center gap-2 text-red-400 font-bold uppercase tracking-widest text-xs mb-2">
-                            <Ticket className="w-4 h-4" /> Limited Time
-                        </div>
-                        <h2 className="text-5xl md:text-6xl font-black italic uppercase text-white tracking-tighter mb-4">
-                            CLEARANCE
-                        </h2>
-                        <Link href="/shop?category=Clearance" className="w-fit bg-white text-black px-6 py-2 rounded-lg font-black uppercase text-sm hover:bg-red-500 hover:text-white transition-colors">
-                            Grab Steals
-                        </Link>
-                    </div>
-                </motion.div>
-
+        <section ref={containerRef} className="relative w-full h-[110vh] bg-[#000000] overflow-hidden flex items-center justify-center pt-24">
+            {/* Extremely Vibrant Gen Z Background */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-[#D9FF00]/15 rounded-full blur-[150px] animate-pulse" />
+                <div className="absolute bottom-[-10%] right-[-10%] w-[70%] h-[70%] bg-[#FF0080]/15 rounded-full blur-[150px] animate-pulse" style={{ animationDelay: '3s' }} />
+                <div className="absolute top-[20%] right-[10%] w-[40%] h-[40%] bg-[#00FFFF]/10 rounded-full blur-[120px]" />
+                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.03] mix-blend-overlay" />
             </div>
 
-            {/* Decorative Background Text (Very subtle) */}
-            <div className="absolute bottom-0 left-0 whitespace-nowrap opacity-[0.03] select-none pointer-events-none">
-                <span className="text-[20vw] font-black uppercase text-white">CULTURE</span>
+            <div className="relative z-10 w-full max-w-screen-2xl mx-auto px-6 md:px-16 flex flex-col items-start">
+
+                {/* Cyber Badges */}
+                <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    className="flex gap-6 mb-12"
+                >
+                    <div className="flex items-center gap-3 px-5 py-2 rounded-full border border-[#D9FF00]/20 bg-[#D9FF00]/5 backdrop-blur-xl">
+                        <div className="w-2 h-2 rounded-full bg-[#D9FF00] shadow-[0_0_15px_#D9FF00]" />
+                        <span className="text-[9px] font-mono font-bold uppercase tracking-[0.3em] text-[#D9FF00]">Vault_Active</span>
+                    </div>
+                    <div className="flex items-center gap-3 px-5 py-2 rounded-full border border-[#FF0080]/20 bg-[#FF0080]/5 backdrop-blur-xl">
+                        <span className="text-[9px] font-mono font-bold uppercase tracking-[0.3em] text-[#FF0080]">Authentic</span>
+                    </div>
+                </motion.div>
+
+                {/* Hyper-Modern Typography */}
+                <motion.div
+                    style={{ opacity }}
+                    className="mb-20 group"
+                >
+                    <h1 className="font-display font-black leading-[0.75] tracking-[-0.06em] uppercase text-white flex flex-col items-start gap-4">
+                        <span className="text-[14vw] md:text-[4vw] font-accent italic font-black text-white/10 tracking-[0.3em] -mb-[2vw]">HEIRLOOM_GEAR</span>
+                        <span className="text-[12vw] md:text-[9vw] block group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#D9FF00] group-hover:to-[#00FFFF] transition-all duration-700">SYSTEM_SYNC</span>
+                        <span className="text-[8vw] md:text-[6vw] block translate-x-[0.04em] text-transparent bg-clip-text bg-gradient-to-r from-[#FF0080] via-white to-[#00FFFF] drop-shadow-[0_0_30px_rgba(255,0,128,0.3)]">Archive_Vault<span className="text-white">.</span></span>
+                    </h1>
+                </motion.div>
+
+                <div className="flex flex-col md:flex-row items-end justify-between w-full gap-20">
+                    <div className="flex flex-col gap-10 max-w-xl">
+                        <Link href="/shop" className="group relative inline-block">
+                            <div className="absolute -inset-2 bg-gradient-to-r from-[#D9FF00] via-[#FF0080] to-[#00FFFF] rounded-full blur-2xl opacity-40 group-hover:opacity-70 transition-all duration-700 animate-pulse" />
+                            <div className="relative px-14 py-7 rounded-full bg-white text-black font-modern font-black uppercase tracking-[0.3em] text-[11px] flex items-center gap-10 transition-all duration-500 hover:scale-105 active:scale-95 shadow-[0_0_50px_rgba(255,255,255,0.3)]">
+                                EXPLORE VAULT
+                                <ArrowRight className="w-5 h-5 group-hover:translate-x-3 transition-transform duration-500" />
+                            </div>
+                        </Link>
+
+                        <div className="flex items-start gap-6">
+                            <div className="w-[2px] h-12 bg-gradient-to-b from-[#D9FF00] via-[#FF0080] to-transparent" />
+                            <p className="text-[13px] font-aesthetic font-bold text-white/40 uppercase tracking-[0.2em] leading-relaxed max-w-sm italic">
+                                India's premier community platform for <span className="text-white not-italic">elite football kits</span>, curated for the <span className="text-[#00FFFF] not-italic">next_gen</span> of collectors.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Dynamic Stats Element */}
+                    <div className="flex flex-col items-end gap-1 text-right border-r-2 border-[#D9FF00] pr-8 py-2">
+                        <span className="text-[10px] font-mono font-bold text-[#D9FF00]/60 uppercase tracking-[0.5em] mb-3 uppercase">Status: Online</span>
+                    </div>
+                </div>
+            </div>
+
+            {/* Aesthetic Navigation Dot */}
+            <div className="absolute bottom-16 right-16 flex flex-col gap-5 items-end group">
+                <div className="flex gap-4">
+                    <div className="w-20 h-[2px] bg-gradient-to-r from-[#D9FF00] to-transparent" />
+                    <div className="w-8 h-[2px] bg-white/10" />
+                    <div className="w-8 h-[2px] bg-white/10" />
+                </div>
             </div>
         </section>
     );

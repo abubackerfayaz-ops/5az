@@ -1,0 +1,2926 @@
+﻿
+> 5az-store@0.1.0 build
+> next build
+
+   ▲ Next.js 15.1.6
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+node.exe : Failed to 
+compile.
+At line:1 char:1
++ & "C:\Program Files
+\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (Failed    
+ to compile.:Stri    
+ng) [], RemoteEx    
+ception
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+
+./app/globals.css
+Module not found: 
+Can't resolve './&'
+
+https://nextjs.org/do
+cs/messages/module-no
+t-found
+
+Import trace for 
+requested module:
+./app/globals.css
+
+./app/globals.css
+HookWebpackError: 
+Cannot find module 
+'./&'
+    at 
+tryRunOrWebpackError 
+(C:\Users\lione\Docum
+ents\5az final\node_m
+odules\next\dist\comp
+iled\webpack\bundle5.
+js:28:314962)
+    at __webpack_requ
+ire_module__ (C:\User
+s\lione\Documents\5az
+ final\node_modules\n
+ext\dist\compiled\web
+pack\bundle5.js:28:13
+1434)
+    at __nested_webpa
+ck_require_161179__ (
+C:\Users\lione\Docume
+nts\5az final\node_mo
+dules\next\dist\compi
+led\webpack\bundle5.j
+s:28:130872)
+    at C:\Users\lione
+\Documents\5az final\
+node_modules\next\dis
+t\compiled\webpack\bu
+ndle5.js:28:131723
+    at 
+symbolIterator (C:\Us
+ers\lione\Documents\5
+az final\node_modules
+\next\dist\compiled\n
+eo-async\async.js:1:1
+4444)
+    at done (C:\Users
+\lione\Documents\5az 
+final\node_modules\ne
+xt\dist\compiled\neo-
+async\async.js:1:1482
+4)
+    at Hook.eval [as 
+callAsync] (eval at 
+create (C:\Users\lion
+e\Documents\5az final
+\node_modules\next\di
+st\compiled\webpack\b
+undle5.js:13:9218), 
+<anonymous>:15:1)
+    at C:\Users\lione
+\Documents\5az final\
+node_modules\next\dis
+t\compiled\webpack\bu
+ndle5.js:28:130593
+    at 
+symbolIterator (C:\Us
+ers\lione\Documents\5
+az final\node_modules
+\next\dist\compiled\n
+eo-async\async.js:1:1
+4402)
+    at timesSync (C:\
+Users\lione\Documents
+\5az final\node_modul
+es\next\dist\compiled
+\neo-async\async.js:1
+:5027)
+-- inner error --
+Error: Cannot find 
+module './&'
+    at 
+webpackMissingModule 
+(C:\Users\lione\Docum
+ents\5az final\node_m
+odules\next\dist\buil
+d\webpack\loaders\css
+-loader\src\index.js?
+?ruleSet[1].rules[13]
+.oneOf[10].use[2]!C:\
+Users\lione\Documents
+\5az final\node_modul
+es\next\dist\build\we
+bpack\loaders\postcss
+-loader\src\index.js?
+?ruleSet[1].rules[13]
+.oneOf[10].use[3]!C:\
+Users\lione\Documents
+\5az final\app\global
+s.css:9:50)
+    at 
+Module.<anonymous> (C
+:\Users\lione\Documen
+ts\5az final\node_mod
+ules\next\dist\build\
+webpack\loaders\css-l
+oader\src\index.js??r
+uleSet[1].rules[13].o
+neOf[10].use[2]!C:\Us
+ers\lione\Documents\5
+az final\node_modules
+\next\dist\build\webp
+ack\loaders\postcss-l
+oader\src\index.js??r
+uleSet[1].rules[13].o
+neOf[10].use[3]!C:\Us
+ers\lione\Documents\5
+az final\app\globals.
+css:9:128)
+    at C:\Users\lione
+\Documents\5az final\
+node_modules\next\dis
+t\compiled\webpack\bu
+ndle5.js:28:955548
+    at Hook.eval [as 
+call] (eval at 
+create (C:\Users\lion
+e\Documents\5az final
+\node_modules\next\di
+st\compiled\webpack\b
+undle5.js:13:8996), 
+<anonymous>:7:1)
+    at C:\Users\lione
+\Documents\5az final\
+node_modules\next\dis
+t\compiled\webpack\bu
+ndle5.js:28:131467
+    at 
+tryRunOrWebpackError 
+(C:\Users\lione\Docum
+ents\5az final\node_m
+odules\next\dist\comp
+iled\webpack\bundle5.
+js:28:314916)
+    at __webpack_requ
+ire_module__ (C:\User
+s\lione\Documents\5az
+ final\node_modules\n
+ext\dist\compiled\web
+pack\bundle5.js:28:13
+1434)
+    at __nested_webpa
+ck_require_161179__ (
+C:\Users\lione\Docume
+nts\5az final\node_mo
+dules\next\dist\compi
+led\webpack\bundle5.j
+s:28:130872)
+    at C:\Users\lione
+\Documents\5az final\
+node_modules\next\dis
+t\compiled\webpack\bu
+ndle5.js:28:131723
+    at 
+symbolIterator (C:\Us
+ers\lione\Documents\5
+az final\node_modules
+\next\dist\compiled\n
+eo-async\async.js:1:1
+4444)
+
+Generated code for C:
+\Users\lione\Document
+s\5az final\node_modu
+les\next\dist\build\w
+ebpack\loaders\css-lo
+ader\src\index.js??ru
+leSet[1].rules[13].on
+eOf[10].use[2]!C:\Use
+rs\lione\Documents\5a
+z final\node_modules\
+next\dist\build\webpa
+ck\loaders\postcss-lo
+ader\src\index.js??ru
+leSet[1].rules[13].on
+eOf[10].use[3]!C:\Use
+rs\lione\Documents\5a
+z 
+final\app\globals.css
+ 1 | __webpack_requir
+e__.r(__webpack_expor
+ts__);
+ 2 | /* harmony 
+export */ __webpack_r
+equire__.d(__webpack_
+exports__, {
+ 3 | /* harmony 
+export */   
+"default": () => (__W
+EBPACK_DEFAULT_EXPORT
+__)
+ 4 | /* harmony 
+export */ });
+ 5 | /* harmony 
+import */ var _node_m
+odules_next_dist_buil
+d_webpack_loaders_css
+_loader_src_runtime_a
+pi_js__WEBPACK_IMPORT
+ED_MODULE_0__ = __web
+pack_require__("C:\\U
+sers\\lione\\Document
+s\\5az final\\node_mo
+dules\\next\\dist\\bu
+ild\\webpack\\loaders
+\\css-loader\\src\\ru
+ntime\\api.js");
+ 6 | /* harmony 
+import */ var _node_m
+odules_next_dist_buil
+d_webpack_loaders_css
+_loader_src_runtime_a
+pi_js__WEBPACK_IMPORT
+ED_MODULE_0___default
+ = /*#__PURE__*/__web
+pack_require__.n(_nod
+e_modules_next_dist_b
+uild_webpack_loaders_
+css_loader_src_runtim
+e_api_js__WEBPACK_IMP
+ORTED_MODULE_0__);
+ 7 | /* harmony 
+import */ var _node_m
+odules_next_dist_buil
+d_webpack_loaders_css
+_loader_src_runtime_g
+etUrl_js__WEBPACK_IMP
+ORTED_MODULE_1__ = __
+webpack_require__("C:
+\\Users\\lione\\Docum
+ents\\5az final\\node
+_modules\\next\\dist\
+\build\\webpack\\load
+ers\\css-loader\\src\
+\runtime\\getUrl.js")
+;
+ 8 | /* harmony 
+import */ var _node_m
+odules_next_dist_buil
+d_webpack_loaders_css
+_loader_src_runtime_g
+etUrl_js__WEBPACK_IMP
+ORTED_MODULE_1___defa
+ult = /*#__PURE__*/__
+webpack_require__.n(_
+node_modules_next_dis
+t_build_webpack_loade
+rs_css_loader_src_run
+time_getUrl_js__WEBPA
+CK_IMPORTED_MODULE_1_
+_);
+ 9 | Object(function 
+webpackMissingModule(
+) { var e = new 
+Error("Cannot find 
+module './&'"); 
+e.code = 
+'MODULE_NOT_FOUND'; 
+throw e; }());
+10 | // Imports
+11 | 
+12 | 
+13 | 
+14 | var ___CSS_LOADE
+R_EXPORT___ = _node_m
+odules_next_dist_buil
+d_webpack_loaders_css
+_loader_src_runtime_a
+pi_js__WEBPACK_IMPORT
+ED_MODULE_0___default
+()(false);
+15 | var ___CSS_LOADE
+R_URL_REPLACEMENT_0__
+_ = _node_modules_nex
+t_dist_build_webpack_
+loaders_css_loader_sr
+c_runtime_getUrl_js__
+WEBPACK_IMPORTED_MODU
+LE_1___default()(Obje
+ct(function webpackMi
+ssingModule() { var 
+e = new 
+Error("Cannot find 
+module './&'"); 
+e.code = 
+'MODULE_NOT_FOUND'; 
+throw e; }()), { 
+hash: "#x27;https://i
+mages.hdqwalls.com/do
+wnload/lionel-messi-a
+nd-cristiano-ronaldo-
+louis-vuitton-5k-8a-3
+840x2160.jpg&" });
+16 | var ___CSS_LOADE
+R_URL_REPLACEMENT_1__
+_ = _node_modules_nex
+t_dist_build_webpack_
+loaders_css_loader_sr
+c_runtime_getUrl_js__
+WEBPACK_IMPORTED_MODU
+LE_1___default()(Obje
+ct(function webpackMi
+ssingModule() { var 
+e = new 
+Error("Cannot find 
+module './&'"); 
+e.code = 
+'MODULE_NOT_FOUND'; 
+throw e; }()), { 
+hash: "#x27;https://i
+mages.unsplash.com/ph
+oto-1626244422230-050
+47b973a5a?q=80&amp;w=
+1920&amp;fit=crop&" 
+});
+17 | // Module
+18 | ___CSS_LOADER_EX
+PORT___.push([module.
+id, "/*! tailwindcss 
+v4.1.18 | MIT 
+License | https://tai
+lwindcss.com 
+*/\n@layer 
+properties{@supports 
+(((-webkit-hyphens:no
+ne)) and (not (margin
+-trim:inline))) or ((
+-moz-orient:inline) 
+and (not 
+(color:rgb(from red 
+r g b)))){*,:before,:
+after,::backdrop{--tw
+-translate-x:0;--tw-t
+ranslate-y:0;--tw-tra
+nslate-z:0;--tw-scale
+-x:1;--tw-scale-y:1;-
+-tw-scale-z:1;--tw-ro
+tate-x:initial;--tw-r
+otate-y:initial;--tw-
+rotate-z:initial;--tw
+-skew-x:initial;--tw-
+skew-y:initial;--tw-s
+pace-y-reverse:0;--tw
+-space-x-reverse:0;--
+tw-divide-y-reverse:0
+;--tw-border-style:so
+lid;--tw-gradient-pos
+ition:initial;--tw-gr
+adient-from:#0000;--t
+w-gradient-via:#0000;
+--tw-gradient-to:#000
+0;--tw-gradient-stops
+:initial;--tw-gradien
+t-via-stops:initial;-
+-tw-gradient-from-pos
+ition:0%;--tw-gradien
+t-via-position:50%;--
+tw-gradient-to-positi
+on:100%;--tw-leading:
+initial;--tw-font-wei
+ght:initial;--tw-trac
+king:initial;--tw-sha
+dow:0 0 #0000;--tw-sh
+adow-color:initial;--
+tw-shadow-alpha:100%;
+--tw-inset-shadow:0 
+0 #0000;--tw-inset-sh
+adow-color:initial;--
+tw-inset-shadow-alpha
+:100%;--tw-ring-color
+:initial;--tw-ring-sh
+adow:0 0 #0000;--tw-i
+nset-ring-color:initi
+al;--tw-inset-ring-sh
+adow:0 0 #0000;--tw-r
+ing-inset:initial;--t
+w-ring-offset-width:0
+px;--tw-ring-offset-c
+olor:#fff;--tw-ring-o
+ffset-shadow:0 0 #000
+0;--tw-blur:initial;-
+-tw-brightness:initia
+l;--tw-contrast:initi
+al;--tw-grayscale:ini
+tial;--tw-hue-rotate:
+initial;--tw-invert:i
+nitial;--tw-opacity:i
+nitial;--tw-saturate:
+initial;--tw-sepia:in
+itial;--tw-drop-shado
+w:initial;--tw-drop-s
+hadow-color:initial;-
+-tw-drop-shadow-alpha
+:100%;--tw-drop-shado
+w-size:initial;--tw-b
+ackdrop-blur:initial;
+--tw-backdrop-brightn
+ess:initial;--tw-back
+drop-contrast:initial
+;--tw-backdrop-graysc
+ale:initial;--tw-back
+drop-hue-rotate:initi
+al;--tw-backdrop-inve
+rt:initial;--tw-backd
+rop-opacity:initial;-
+-tw-backdrop-saturate
+:initial;--tw-backdro
+p-sepia:initial;--tw-
+duration:initial;--tw
+-ease:initial}}}@laye
+r theme{:root,:host{-
+-font-sans:ui-sans-se
+rif,system-ui,sans-se
+rif,\"Apple Color 
+Emoji\",\"Segoe UI 
+Emoji\",\"Segoe UI 
+Symbol\",\"Noto 
+Color Emoji\";--font-
+mono:ui-monospace,SFM
+ono-Regular,Menlo,Mon
+aco,Consolas,\"Libera
+tion 
+Mono\",\"Courier New\
+",monospace;--color-r
+ed-200:oklch(88.5% 
+.062 18.334);--color-
+red-400:oklch(70.4% 
+.191 22.216);--color-
+red-500:oklch(63.7% 
+.237 25.331);--color-
+green-400:oklch(79.2%
+ .209 151.711);--colo
+r-green-500:oklch(72.
+3% .219 149.579);--co
+lor-pink-500:oklch(65
+.6% .241 354.308);--c
+olor-gray-300:oklch(8
+7.2% .01 258.338);--c
+olor-gray-400:oklch(7
+0.7% .022 261.325);--
+color-gray-500:oklch(
+55.1% .027 264.364);-
+-color-gray-600:oklch
+(44.6% .03 256.802);-
+-color-gray-900:oklch
+(21% .034 264.665);--
+color-neutral-100:okl
+ch(97% 0 0);--color-n
+eutral-200:oklch(92.2
+% 0 0);--color-neutra
+l-300:oklch(87% 0 0);
+--color-neutral-400:o
+klch(70.8% 0 0);--col
+or-neutral-500:oklch(
+55.6% 0 0);--color-ne
+utral-600:oklch(43.9%
+ 0 0);--color-neutral
+-800:oklch(26.9% 0 0)
+;--color-neutral-900:
+oklch(20.5% 0 0);--co
+lor-black:#000;--colo
+r-white:#fff;--spacin
+g:.25rem;--container-
+xs:20rem;--container-
+md:28rem;--container-
+lg:32rem;--container-
+xl:36rem;--container-
+2xl:42rem;--container
+-4xl:56rem;--containe
+r-5xl:64rem;--contain
+er-7xl:80rem;--text-x
+s:.75rem;--text-xs--l
+ine-height:calc(1/.75
+);--text-sm:.875rem;-
+-text-sm--line-height
+:calc(1.25/.875);--te
+xt-lg:1.125rem;--text
+-lg--line-height:calc
+(1.75/1.125);--text-x
+l:1.25rem;--text-xl--
+line-height:calc(1.75
+/1.25);--text-2xl:1.5
+rem;--text-2xl--line-
+height:calc(2/1.5);--
+text-3xl:1.875rem;--t
+ext-3xl--line-height:
+calc(2.25/1.875);--te
+xt-4xl:2.25rem;--text
+-4xl--line-height:cal
+c(2.5/2.25);--text-5x
+l:3rem;--text-5xl--li
+ne-height:1;--text-6x
+l:3.75rem;--text-6xl-
+-line-height:1;--text
+-7xl:4.5rem;--text-7x
+l--line-height:1;--te
+xt-8xl:6rem;--text-8x
+l--line-height:1;--te
+xt-9xl:8rem;--text-9x
+l--line-height:1;--fo
+nt-weight-medium:500;
+--font-weight-bold:70
+0;--font-weight-extra
+bold:800;--font-weigh
+t-black:900;--trackin
+g-tighter:-.05em;--tr
+acking-tight:-.025em;
+--tracking-wide:.025e
+m;--tracking-wider:.0
+5em;--tracking-widest
+:.1em;--leading-relax
+ed:1.625;--radius-md:
+.375rem;--radius-lg:.
+5rem;--radius-xl:.75r
+em;--radius-2xl:1rem;
+--radius-3xl:1.5rem;-
+-ease-out:cubic-bezie
+r(0,0,.2,1);--animate
+-spin:spin 1s linear 
+infinite;--animate-pu
+lse:pulse 2s cubic-be
+zier(.4,0,.6,1)infini
+te;--blur-sm:8px;--bl
+ur-md:12px;--blur-xl:
+24px;--default-transi
+tion-duration:.15s;--
+default-transition-ti
+ming-function:cubic-b
+ezier(.4,0,.2,1);--de
+fault-font-family:var
+(--font-sans);--defau
+lt-mono-font-family:v
+ar(--font-mono)}}@lay
+er base{*,:after,:bef
+ore,::backdrop{box-si
+zing:border-box;borde
+r:0 solid;margin:0;pa
+dding:0}::file-select
+or-button{box-sizing:
+border-box;border:0 s
+olid;margin:0;padding
+:0}html,:host{-webkit
+-text-size-adjust:100
+%;tab-size:4;line-hei
+ght:1.5;font-family:v
+ar(--default-font-fam
+ily,ui-sans-serif,sys
+tem-ui,sans-serif,\"A
+pple Color 
+Emoji\",\"Segoe UI 
+Emoji\",\"Segoe UI 
+Symbol\",\"Noto 
+Color Emoji\");font-f
+eature-settings:var(-
+-default-font-feature
+-settings,normal);fon
+t-variation-settings:
+var(--default-font-va
+riation-settings,norm
+al);-webkit-tap-highl
+ight-color:transparen
+t}hr{height:0;color:i
+nherit;border-top-wid
+th:1px}abbr:where([ti
+tle]){-webkit-text-de
+coration:underline do
+tted;text-decoration:
+underline dotted}h1,h
+2,h3,h4,h5,h6{font-si
+ze:inherit;font-weigh
+t:inherit}a{color:inh
+erit;-webkit-text-dec
+oration:inherit;-webk
+it-text-decoration:in
+herit;-webkit-text-de
+coration:inherit;text
+-decoration:inherit}b
+,strong{font-weight:b
+older}code,kbd,samp,p
+re{font-family:var(--
+default-mono-font-fam
+ily,ui-monospace,SFMo
+no-Regular,Menlo,Mona
+co,Consolas,\"Liberat
+ion Mono\",\"Courier 
+New\",monospace);font
+-feature-settings:var
+(--default-mono-font-
+feature-settings,norm
+al);font-variation-se
+ttings:var(--default-
+mono-font-variation-s
+ettings,normal);font-
+size:1em}small{font-s
+ize:80%}sub,sup{verti
+cal-align:baseline;fo
+nt-size:75%;line-heig
+ht:0;position:relativ
+e}sub{bottom:-.25em}s
+up{top:-.5em}table{te
+xt-indent:0;border-co
+lor:inherit;border-co
+llapse:collapse}:-moz
+-focusring{outline:au
+to}progress{vertical-
+align:baseline}summar
+y{display:list-item}o
+l,ul,menu{list-style:
+none}img,svg,video,ca
+nvas,audio,iframe,emb
+ed,object{vertical-al
+ign:middle;display:bl
+ock}img,video{max-wid
+th:100%;height:auto}b
+utton,input,select,op
+tgroup,textarea{font:
+inherit;font-feature-
+settings:inherit;font
+-variation-settings:i
+nherit;letter-spacing
+:inherit;color:inheri
+t;opacity:1;backgroun
+d-color:#0000;border-
+radius:0}::file-selec
+tor-button{font:inher
+it;font-feature-setti
+ngs:inherit;font-vari
+ation-settings:inheri
+t;letter-spacing:inhe
+rit;color:inherit;opa
+city:1;background-col
+or:#0000;border-radiu
+s:0}:where(select:is(
+[multiple],[size])) o
+ptgroup{font-weight:b
+older}:where(select:i
+s([multiple],[size]))
+ optgroup option{padd
+ing-inline-start:20px
+}::file-selector-butt
+on{margin-inline-end:
+4px}::placeholder{opa
+city:1}@supports 
+(not ((-webkit-appear
+ance:-apple-pay-butto
+n))) or (contain-intr
+insic-size:1px){::pla
+ceholder{color:curren
+tColor}@supports 
+(color:color-mix(in 
+lab, red, red)){::pla
+ceholder{color:color-
+mix(in 
+oklab,currentcolor 50
+%,transparent)}}}text
+area{resize:vertical}
+::-webkit-search-deco
+ration{-webkit-appear
+ance:none}::-webkit-d
+ate-and-time-value{mi
+n-height:1lh;text-ali
+gn:inherit}::-webkit-
+datetime-edit{display
+:inline-flex}::-webki
+t-datetime-edit-field
+s-wrapper{padding:0}:
+:-webkit-datetime-edi
+t{padding-block:0}::-
+webkit-datetime-edit-
+year-field{padding-bl
+ock:0}::-webkit-datet
+ime-edit-month-field{
+padding-block:0}::-we
+bkit-datetime-edit-da
+y-field{padding-block
+:0}::-webkit-datetime
+-edit-hour-field{padd
+ing-block:0}::-webkit
+-datetime-edit-minute
+-field{padding-block:
+0}::-webkit-datetime-
+edit-second-field{pad
+ding-block:0}::-webki
+t-datetime-edit-milli
+second-field{padding-
+block:0}::-webkit-dat
+etime-edit-meridiem-f
+ield{padding-block:0}
+::-webkit-calendar-pi
+cker-indicator{line-h
+eight:1}:-moz-ui-inva
+lid{box-shadow:none}b
+utton,input:where([ty
+pe=button],[type=rese
+t],[type=submit]){app
+earance:button}::file
+-selector-button{appe
+arance:button}::-webk
+it-inner-spin-button{
+height:auto}::-webkit
+-outer-spin-button{he
+ight:auto}[hidden]:wh
+ere(:not([hidden=unti
+l-found])){display:no
+ne!important}}@layer 
+components;@layer uti
+lities{.pointer-event
+s-none{pointer-events
+:none}.visible{visibi
+lity:visible}.absolut
+e{position:absolute}.
+fixed{position:fixed}
+.relative{position:re
+lative}.sticky{positi
+on:sticky}.inset-0{in
+set:calc(var(--spacin
+g)*0)}.-top-24{top:ca
+lc(var(--spacing)*-24
+)}.top-0{top:calc(var
+(--spacing)*0)}.top-1
+{top:calc(var(--spaci
+ng)*1)}.top-1\\/2{top
+:50%}.top-4{top:calc(
+var(--spacing)*4)}.to
+p-6{top:calc(var(--sp
+acing)*6)}.top-full{t
+op:100%}.-right-24{ri
+ght:calc(var(--spacin
+g)*-24)}.right-0{righ
+t:calc(var(--spacing)
+*0)}.right-6{right:ca
+lc(var(--spacing)*6)}
+.-bottom-2{bottom:cal
+c(var(--spacing)*-2)}
+.-bottom-24{bottom:ca
+lc(var(--spacing)*-24
+)}.bottom-10{bottom:c
+alc(var(--spacing)*10
+)}.bottom-12{bottom:c
+alc(var(--spacing)*12
+)}.-left-24{left:calc
+(var(--spacing)*-24)}
+.left-0{left:calc(var
+(--spacing)*0)}.left-
+1{left:calc(var(--spa
+cing)*1)}.left-1\\/2{
+left:50%}.left-4{left
+:calc(var(--spacing)*
+4)}.left-6{left:calc(
+var(--spacing)*6)}.le
+ft-10{left:calc(var(-
+-spacing)*10)}.-z-10{
+z-index:calc(10*-1)}.
+z-0{z-index:0}.z-10{z
+-index:10}.z-20{z-ind
+ex:20}.z-30{z-index:3
+0}.z-\\[100\\]{z-inde
+x:100}.z-\\[9999\\]{z
+-index:9999}.col-span
+-2{grid-column:span 
+2/span 2}.col-span-fu
+ll{grid-column:1/-1}.
+container{width:100%}
+@media (min-width:40r
+em){.container{max-wi
+dth:40rem}}@media (mi
+n-width:48rem){.conta
+iner{max-width:48rem}
+}@media (min-width:64
+rem){.container{max-w
+idth:64rem}}@media (m
+in-width:80rem){.cont
+ainer{max-width:80rem
+}}@media (min-width:9
+6rem){.container{max-
+width:96rem}}.m-24{ma
+rgin:calc(var(--spaci
+ng)*24)}.mx-4{margin-
+inline:calc(var(--spa
+cing)*4)}.mx-8{margin
+-inline:calc(var(--sp
+acing)*8)}.mx-auto{ma
+rgin-inline:auto}.my-
+20{margin-block:calc(
+var(--spacing)*20)}.m
+y-24{margin-block:cal
+c(var(--spacing)*24)}
+.mt-2{margin-top:calc
+(var(--spacing)*2)}.m
+t-4{margin-top:calc(v
+ar(--spacing)*4)}.mt-
+6{margin-top:calc(var
+(--spacing)*6)}.mt-8{
+margin-top:calc(var(-
+-spacing)*8)}.mt-10{m
+argin-top:calc(var(--
+spacing)*10)}.-mr-2{m
+argin-right:calc(var(
+--spacing)*-2)}.mr-2{
+margin-right:calc(var
+(--spacing)*2)}.mb-1{
+margin-bottom:calc(va
+r(--spacing)*1)}.mb-2
+{margin-bottom:calc(v
+ar(--spacing)*2)}.mb-
+4{margin-bottom:calc(
+var(--spacing)*4)}.mb
+-6{margin-bottom:calc
+(var(--spacing)*6)}.m
+b-8{margin-bottom:cal
+c(var(--spacing)*8)}.
+mb-10{margin-bottom:c
+alc(var(--spacing)*10
+)}.mb-12{margin-botto
+m:calc(var(--spacing)
+*12)}.mb-16{margin-bo
+ttom:calc(var(--spaci
+ng)*16)}.mb-20{margin
+-bottom:calc(var(--sp
+acing)*20)}.ml-1{marg
+in-left:calc(var(--sp
+acing)*1)}.line-clamp
+-1{-webkit-line-clamp
+:1;-webkit-box-orient
+:vertical;display:-we
+bkit-box;overflow:hid
+den}.block{display:bl
+ock}.flex{display:fle
+x}.grid{display:grid}
+.hidden{display:none}
+.inline{display:inlin
+e}.inline-block{displ
+ay:inline-block}.inli
+ne-flex{display:inlin
+e-flex}.table{display
+:table}.aspect-\\[4\\
+/5\\]{aspect-ratio:4/
+5}.size-full{width:10
+0%;height:100%}.h-0{h
+eight:calc(var(--spac
+ing)*0)}.h-0\\.5{heig
+ht:calc(var(--spacing
+)*.5)}.h-1{height:cal
+c(var(--spacing)*1)}.
+h-2{height:calc(var(-
+-spacing)*2)}.h-3{hei
+ght:calc(var(--spacin
+g)*3)}.h-4{height:cal
+c(var(--spacing)*4)}.
+h-5{height:calc(var(-
+-spacing)*5)}.h-6{hei
+ght:calc(var(--spacin
+g)*6)}.h-8{height:cal
+c(var(--spacing)*8)}.
+h-10{height:calc(var(
+--spacing)*10)}.h-12{
+height:calc(var(--spa
+cing)*12)}.h-16{heigh
+t:calc(var(--spacing)
+*16)}.h-96{height:cal
+c(var(--spacing)*96)}
+.h-\\[2px\\]{height:2
+px}.h-\\[120vh\\]{hei
+ght:120vh}.h-fit{heig
+ht:fit-content}.h-ful
+l{height:100%}.h-px{h
+eight:1px}.h-screen{h
+eight:100vh}.max-h-\\
+[70vh\\]{max-height:7
+0vh}.min-h-\\[100px\\
+]{min-height:100px}.m
+in-h-screen{min-heigh
+t:100vh}.w-0{width:ca
+lc(var(--spacing)*0)}
+.w-1{width:calc(var(-
+-spacing)*1)}.w-1\\/3
+{width:33.3333%}.w-1\
+\/4{width:25%}.w-2{wi
+dth:calc(var(--spacin
+g)*2)}.w-3{width:calc
+(var(--spacing)*3)}.w
+-4{width:calc(var(--s
+pacing)*4)}.w-5{width
+:calc(var(--spacing)*
+5)}.w-6{width:calc(va
+r(--spacing)*6)}.w-8{
+width:calc(var(--spac
+ing)*8)}.w-10{width:c
+alc(var(--spacing)*10
+)}.w-12{width:calc(va
+r(--spacing)*12)}.w-1
+6{width:calc(var(--sp
+acing)*16)}.w-96{widt
+h:calc(var(--spacing)
+*96)}.w-fit{width:fit
+-content}.w-full{widt
+h:100%}.w-px{width:1p
+x}.w-xl{width:var(--c
+ontainer-xl)}.max-w-2
+xl{max-width:var(--co
+ntainer-2xl)}.max-w-4
+xl{max-width:var(--co
+ntainer-4xl)}.max-w-5
+xl{max-width:var(--co
+ntainer-5xl)}.max-w-7
+xl{max-width:var(--co
+ntainer-7xl)}.max-w-l
+g{max-width:var(--con
+tainer-lg)}.max-w-md{
+max-width:var(--conta
+iner-md)}.max-w-xl{ma
+x-width:var(--contain
+er-xl)}.max-w-xs{max-
+width:var(--container
+-xs)}.flex-1{flex:1}.
+flex-shrink-0{flex-sh
+rink:0}.origin-left{t
+ransform-origin:0}.-t
+ranslate-x-1{--tw-tra
+nslate-x:calc(var(--s
+pacing)*-1);translate
+:var(--tw-translate-x
+)var(--tw-translate-y
+)}.-translate-x-1\\/2
+{--tw-translate-x:cal
+c(calc(1/2*100%)*-1);
+translate:var(--tw-tr
+anslate-x)var(--tw-tr
+anslate-y)}.translate
+-x-1{--tw-translate-x
+:calc(var(--spacing)*
+1);translate:var(--tw
+-translate-x)var(--tw
+-translate-y)}.transl
+ate-x-1\\/2{--tw-tran
+slate-x:calc(1/2*100%
+);translate:var(--tw-
+translate-x)var(--tw-
+translate-y)}.-transl
+ate-y-1{--tw-translat
+e-y:calc(var(--spacin
+g)*-1);translate:var(
+--tw-translate-x)var(
+--tw-translate-y)}.-t
+ranslate-y-1\\/2{--tw
+-translate-y:calc(cal
+c(1/2*100%)*-1);trans
+late:var(--tw-transla
+te-x)var(--tw-transla
+te-y)}.translate-y-4{
+--tw-translate-y:calc
+(var(--spacing)*4);tr
+anslate:var(--tw-tran
+slate-x)var(--tw-tran
+slate-y)}.scale-105{-
+-tw-scale-x:105%;--tw
+-scale-y:105%;--tw-sc
+ale-z:105%;scale:var(
+--tw-scale-x)var(--tw
+-scale-y)}.-rotate-1{
+rotate:-1deg}.skew-x-
+12{--tw-skew-x:skewX(
+12deg);transform:var(
+--tw-rotate-x,)var(--
+tw-rotate-y,)var(--tw
+-rotate-z,)var(--tw-s
+kew-x,)var(--tw-skew-
+y,)}.transform{transf
+orm:var(--tw-rotate-x
+,)var(--tw-rotate-y,)
+var(--tw-rotate-z,)va
+r(--tw-skew-x,)var(--
+tw-skew-y,)}.animate-
+spin{animation:var(--
+animate-spin)}.cursor
+-default{cursor:defau
+lt}.cursor-pointer{cu
+rsor:pointer}.grid-co
+ls-1{grid-template-co
+lumns:repeat(1,minmax
+(0,1fr))}.grid-cols-2
+{grid-template-column
+s:repeat(2,minmax(0,1
+fr))}.flex-col{flex-d
+irection:column}.flex
+-wrap{flex-wrap:wrap}
+.items-baseline{align
+-items:baseline}.item
+s-center{align-items:
+center}.items-end{ali
+gn-items:flex-end}.it
+ems-start{align-items
+:flex-start}.justify-
+between{justify-conte
+nt:space-between}.jus
+tify-center{justify-c
+ontent:center}.justif
+y-end{justify-content
+:flex-end}.gap-1{gap:
+calc(var(--spacing)*1
+)}.gap-1\\.5{gap:calc
+(var(--spacing)*1.5)}
+.gap-2{gap:calc(var(-
+-spacing)*2)}.gap-3{g
+ap:calc(var(--spacing
+)*3)}.gap-4{gap:calc(
+var(--spacing)*4)}.ga
+p-6{gap:calc(var(--sp
+acing)*6)}.gap-8{gap:
+calc(var(--spacing)*8
+)}.gap-10{gap:calc(va
+r(--spacing)*10)}.gap
+-12{gap:calc(var(--sp
+acing)*12)}.gap-16{ga
+p:calc(var(--spacing)
+*16)}.gap-20{gap:calc
+(var(--spacing)*20)}:
+where(.space-y-2>:not
+(:last-child)){--tw-s
+pace-y-reverse:0;marg
+in-block-start:calc(c
+alc(var(--spacing)*2)
+*var(--tw-space-y-rev
+erse));margin-block-e
+nd:calc(calc(var(--sp
+acing)*2)*calc(1 - va
+r(--tw-space-y-revers
+e)))}:where(.space-y-
+4>:not(:last-child)){
+--tw-space-y-reverse:
+0;margin-block-start:
+calc(calc(var(--spaci
+ng)*4)*var(--tw-space
+-y-reverse));margin-b
+lock-end:calc(calc(va
+r(--spacing)*4)*calc(
+1 - var(--tw-space-y-
+reverse)))}:where(.sp
+ace-y-6>:not(:last-ch
+ild)){--tw-space-y-re
+verse:0;margin-block-
+start:calc(calc(var(-
+-spacing)*6)*var(--tw
+-space-y-reverse));ma
+rgin-block-end:calc(c
+alc(var(--spacing)*6)
+*calc(1 - var(--tw-sp
+ace-y-reverse)))}:whe
+re(.space-y-8>:not(:l
+ast-child)){--tw-spac
+e-y-reverse:0;margin-
+block-start:calc(calc
+(var(--spacing)*8)*va
+r(--tw-space-y-revers
+e));margin-block-end:
+calc(calc(var(--spaci
+ng)*8)*calc(1 - var(-
+-tw-space-y-reverse))
+)}:where(.space-y-10>
+:not(:last-child)){--
+tw-space-y-reverse:0;
+margin-block-start:ca
+lc(calc(var(--spacing
+)*10)*var(--tw-space-
+y-reverse));margin-bl
+ock-end:calc(calc(var
+(--spacing)*10)*calc(
+1 - var(--tw-space-y-
+reverse)))}:where(.sp
+ace-x-6>:not(:last-ch
+ild)){--tw-space-x-re
+verse:0;margin-inline
+-start:calc(calc(var(
+--spacing)*6)*var(--t
+w-space-x-reverse));m
+argin-inline-end:calc
+(calc(var(--spacing)*
+6)*calc(1 - var(--tw-
+space-x-reverse)))}:w
+here(.space-x-10>:not
+(:last-child)){--tw-s
+pace-x-reverse:0;marg
+in-inline-start:calc(
+calc(var(--spacing)*1
+0)*var(--tw-space-x-r
+everse));margin-inlin
+e-end:calc(calc(var(-
+-spacing)*10)*calc(1 
+- var(--tw-space-x-re
+verse)))}:where(.spac
+e-x-12>:not(:last-chi
+ld)){--tw-space-x-rev
+erse:0;margin-inline-
+start:calc(calc(var(-
+-spacing)*12)*var(--t
+w-space-x-reverse));m
+argin-inline-end:calc
+(calc(var(--spacing)*
+12)*calc(1 - var(--tw
+-space-x-reverse)))}:
+where(.divide-y>:not(
+:last-child)){--tw-di
+vide-y-reverse:0;bord
+er-bottom-style:var(-
+-tw-border-style);bor
+der-top-style:var(--t
+w-border-style);borde
+r-top-width:calc(1px*
+var(--tw-divide-y-rev
+erse));border-bottom-
+width:calc(1px*calc(1
+ - var(--tw-divide-y-
+reverse)))}:where(.di
+vide-white>:not(:last
+-child)){border-color
+:var(--color-white)}:
+where(.divide-white\\
+/5>:not(:last-child))
+{border-color:#ffffff
+0d}@supports 
+(color:color-mix(in 
+lab, red, red)){:wher
+e(.divide-white\\/5>:
+not(:last-child)){bor
+der-color:color-mix(i
+n oklab,var(--color-w
+hite)5%,transparent)}
+}.overflow-hidden{ove
+rflow:hidden}.overflo
+w-x-auto{overflow-x:a
+uto}.overflow-x-hidde
+n{overflow-x:hidden}.
+overflow-y-auto{overf
+low-y:auto}.rounded{b
+order-radius:.25rem}.
+rounded-2xl{border-ra
+dius:var(--radius-2xl
+)}.rounded-3xl{border
+-radius:var(--radius-
+3xl)}.rounded-\\[1\\.
+5rem\\]{border-radius
+:1.5rem}.rounded-\\[2
+rem\\]{border-radius:
+2rem}.rounded-\\[3rem
+\\]{border-radius:3re
+m}.rounded-\\[4rem\\]
+{border-radius:4rem}.
+rounded-full{border-r
+adius:3.40282e38px}.r
+ounded-lg{border-radi
+us:var(--radius-lg)}.
+rounded-md{border-rad
+ius:var(--radius-md)}
+.rounded-xl{border-ra
+dius:var(--radius-xl)
+}.rounded-t-\\[4rem\\
+]{border-top-left-rad
+ius:4rem;border-top-r
+ight-radius:4rem}.bor
+der{border-style:var(
+--tw-border-style);bo
+rder-width:1px}.borde
+r-y{border-block-styl
+e:var(--tw-border-sty
+le);border-block-widt
+h:1px}.border-t{borde
+r-top-style:var(--tw-
+border-style);border-
+top-width:1px}.border
+-r{border-right-style
+:var(--tw-border-styl
+e);border-right-width
+:1px}.border-b{border
+-bottom-style:var(--t
+w-border-style);borde
+r-bottom-width:1px}.b
+order-black{border-co
+lor:var(--color-black
+)}.border-black\\/5{b
+order-color:#0000000d
+}@supports 
+(color:color-mix(in 
+lab, red, red)){.bord
+er-black\\/5{border-c
+olor:color-mix(in okl
+ab,var(--color-black)
+5%,transparent)}}.bor
+der-black\\/10{border
+-color:#0000001a}@sup
+ports 
+(color:color-mix(in 
+lab, red, red)){.bord
+er-black\\/10{border-
+color:color-mix(in ok
+lab,var(--color-black
+)10%,transparent)}}.b
+order-red-500{border-
+color:var(--color-red
+-500)}.border-red-500
+\\/50{border-color:#f
+b2c3680}@supports 
+(color:color-mix(in 
+lab, red, red)){.bord
+er-red-500\\/50{borde
+r-color:color-mix(in 
+oklab,var(--color-red
+-500)50%,transparent)
+}}.border-white{borde
+r-color:var(--color-w
+hite)}.border-white\\
+/5{border-color:#ffff
+ff0d}@supports 
+(color:color-mix(in 
+lab, red, red)){.bord
+er-white\\/5{border-c
+olor:color-mix(in okl
+ab,var(--color-white)
+5%,transparent)}}.bor
+der-white\\/10{border
+-color:#ffffff1a}@sup
+ports 
+(color:color-mix(in 
+lab, red, red)){.bord
+er-white\\/10{border-
+color:color-mix(in ok
+lab,var(--color-white
+)10%,transparent)}}.b
+order-white\\/20{bord
+er-color:#fff3}@suppo
+rts 
+(color:color-mix(in 
+lab, red, red)){.bord
+er-white\\/20{border-
+color:color-mix(in ok
+lab,var(--color-white
+)20%,transparent)}}.b
+order-white\\/50{bord
+er-color:#ffffff80}@s
+upports 
+(color:color-mix(in 
+lab, red, red)){.bord
+er-white\\/50{border-
+color:color-mix(in ok
+lab,var(--color-white
+)50%,transparent)}}.b
+g-\\[\\#F2F2F2\\]{bac
+kground-color:#f2f2f2
+}.bg-black{background
+-color:var(--color-bl
+ack)}.bg-black\\/5{ba
+ckground-color:#00000
+00d}@supports 
+(color:color-mix(in 
+lab, red, red)){.bg-b
+lack\\/5{background-c
+olor:color-mix(in okl
+ab,var(--color-black)
+5%,transparent)}}.bg-
+black\\/40{background
+-color:#0006}@support
+s 
+(color:color-mix(in 
+lab, red, red)){.bg-b
+lack\\/40{background-
+color:color-mix(in ok
+lab,var(--color-black
+)40%,transparent)}}.b
+g-black\\/50{backgrou
+nd-color:#00000080}@s
+upports 
+(color:color-mix(in 
+lab, red, red)){.bg-b
+lack\\/50{background-
+color:color-mix(in ok
+lab,var(--color-black
+)50%,transparent)}}.b
+g-black\\/60{backgrou
+nd-color:#0009}@suppo
+rts 
+(color:color-mix(in 
+lab, red, red)){.bg-b
+lack\\/60{background-
+color:color-mix(in ok
+lab,var(--color-black
+)60%,transparent)}}.b
+g-black\\/80{backgrou
+nd-color:#000c}@suppo
+rts 
+(color:color-mix(in 
+lab, red, red)){.bg-b
+lack\\/80{background-
+color:color-mix(in ok
+lab,var(--color-black
+)80%,transparent)}}.b
+g-gray-900{background
+-color:var(--color-gr
+ay-900)}.bg-green-500
+{background-color:var
+(--color-green-500)}.
+bg-neutral-100{backgr
+ound-color:var(--colo
+r-neutral-100)}.bg-ne
+utral-900{background-
+color:var(--color-neu
+tral-900)}.bg-neutral
+-900\\/50{background-
+color:#17171780}@supp
+orts 
+(color:color-mix(in 
+lab, red, red)){.bg-n
+eutral-900\\/50{backg
+round-color:color-mix
+(in oklab,var(--color
+-neutral-900)50%,tran
+sparent)}}.bg-red-500
+{background-color:var
+(--color-red-500)}.bg
+-red-500\\/20{backgro
+und-color:#fb2c3633}@
+supports 
+(color:color-mix(in 
+lab, red, red)){.bg-r
+ed-500\\/20{backgroun
+d-color:color-mix(in 
+oklab,var(--color-red
+-500)20%,transparent)
+}}.bg-transparent{bac
+kground-color:#0000}.
+bg-white{background-c
+olor:var(--color-whit
+e)}.bg-white\\/5{back
+ground-color:#ffffff0
+d}@supports 
+(color:color-mix(in 
+lab, red, red)){.bg-w
+hite\\/5{background-c
+olor:color-mix(in okl
+ab,var(--color-white)
+5%,transparent)}}.bg-
+white\\/10{background
+-color:#ffffff1a}@sup
+ports 
+(color:color-mix(in 
+lab, red, red)){.bg-w
+hite\\/10{background-
+color:color-mix(in ok
+lab,var(--color-white
+)10%,transparent)}}.b
+g-white\\/20{backgrou
+nd-color:#fff3}@suppo
+rts 
+(color:color-mix(in 
+lab, red, red)){.bg-w
+hite\\/20{background-
+color:color-mix(in ok
+lab,var(--color-white
+)20%,transparent)}}.b
+g-white\\/80{backgrou
+nd-color:#fffc}@suppo
+rts 
+(color:color-mix(in 
+lab, red, red)){.bg-w
+hite\\/80{background-
+color:color-mix(in ok
+lab,var(--color-white
+)80%,transparent)}}.b
+g-white\\/90{backgrou
+nd-color:#ffffffe6}@s
+upports 
+(color:color-mix(in 
+lab, red, red)){.bg-w
+hite\\/90{background-
+color:color-mix(in ok
+lab,var(--color-white
+)90%,transparent)}}.b
+g-gradient-to-b{--tw-
+gradient-position:to 
+bottom in oklab;backg
+round-image:linear-gr
+adient(var(--tw-gradi
+ent-stops))}.bg-gradi
+ent-to-r{--tw-gradien
+t-position:to right 
+in oklab;background-i
+mage:linear-gradient(
+var(--tw-gradient-sto
+ps))}.bg-gradient-to-
+t{--tw-gradient-posit
+ion:to top in oklab;b
+ackground-image:linea
+r-gradient(var(--tw-g
+radient-stops))}.bg-\
+\[url\\(\\&\\#x27\\;h
+ttps\\:\\/\\/images\\
+.hdqwalls\\.com\\/dow
+nload\\/lionel-messi-
+and-cristiano-ronaldo
+-louis-vuitton-5k-8a-
+3840x2160\\.jpg\\&\\#
+x27\\;\\)\\]{backgrou
+nd-image:url(" + ___C
+SS_LOADER_URL_REPLACE
+MENT_0___ + ")}.bg-\\
+[url\\(\\&\\#x27\\;ht
+tps\\:\\/\\/images\\.
+unsplash\\.com\\/phot
+o-1626244422230-05047
+b973a5a\\?q\\=80\\&am
+p\\;w\\=1920\\&amp\\;
+fit\\=crop\\&\\#x27\\
+;\\)\\]{background-im
+age:url(" + ___CSS_LO
+ADER_URL_REPLACEMENT_
+1___ + ")}.from-black
+{--tw-gradient-from:v
+ar(--color-black);--t
+w-gradient-stops:var(
+--tw-gradient-via-sto
+ps,var(--tw-gradient-
+position),var(--tw-gr
+adient-from)var(--tw-
+gradient-from-positio
+n),var(--tw-gradient-
+to)var(--tw-gradient-
+to-position))}.from-b
+lack\\/60{--tw-gradie
+nt-from:#0009}@suppor
+ts 
+(color:color-mix(in 
+lab, red, red)){.from
+-black\\/60{--tw-grad
+ient-from:color-mix(i
+n oklab,var(--color-b
+lack)60%,transparent)
+}}.from-black\\/60{--
+tw-gradient-stops:var
+(--tw-gradient-via-st
+ops,var(--tw-gradient
+-position),var(--tw-g
+radient-from)var(--tw
+-gradient-from-positi
+on),var(--tw-gradient
+-to)var(--tw-gradient
+-to-position))}.from-
+black\\/80{--tw-gradi
+ent-from:#000c}@suppo
+rts 
+(color:color-mix(in 
+lab, red, red)){.from
+-black\\/80{--tw-grad
+ient-from:color-mix(i
+n oklab,var(--color-b
+lack)80%,transparent)
+}}.from-black\\/80{--
+tw-gradient-stops:var
+(--tw-gradient-via-st
+ops,var(--tw-gradient
+-position),var(--tw-g
+radient-from)var(--tw
+-gradient-from-positi
+on),var(--tw-gradient
+-to)var(--tw-gradient
+-to-position))}.from-
+transparent{--tw-grad
+ient-from:transparent
+;--tw-gradient-stops:
+var(--tw-gradient-via
+-stops,var(--tw-gradi
+ent-position),var(--t
+w-gradient-from)var(-
+-tw-gradient-from-pos
+ition),var(--tw-gradi
+ent-to)var(--tw-gradi
+ent-to-position))}.vi
+a-transparent{--tw-gr
+adient-via:transparen
+t;--tw-gradient-via-s
+tops:var(--tw-gradien
+t-position),var(--tw-
+gradient-from)var(--t
+w-gradient-from-posit
+ion),var(--tw-gradien
+t-via)var(--tw-gradie
+nt-via-position),var(
+--tw-gradient-to)var(
+--tw-gradient-to-posi
+tion);--tw-gradient-s
+tops:var(--tw-gradien
+t-via-stops)}.to-tran
+sparent{--tw-gradient
+-to:transparent;--tw-
+gradient-stops:var(--
+tw-gradient-via-stops
+,var(--tw-gradient-po
+sition),var(--tw-grad
+ient-from)var(--tw-gr
+adient-from-position)
+,var(--tw-gradient-to
+)var(--tw-gradient-to
+-position))}.to-white
+{--tw-gradient-to:var
+(--color-white);--tw-
+gradient-stops:var(--
+tw-gradient-via-stops
+,var(--tw-gradient-po
+sition),var(--tw-grad
+ient-from)var(--tw-gr
+adient-from-position)
+,var(--tw-gradient-to
+)var(--tw-gradient-to
+-position))}.to-white
+\\/20{--tw-gradient-t
+o:#fff3}@supports 
+(color:color-mix(in 
+lab, red, red)){.to-w
+hite\\/20{--tw-gradie
+nt-to:color-mix(in ok
+lab,var(--color-white
+)20%,transparent)}}.t
+o-white\\/20{--tw-gra
+dient-stops:var(--tw-
+gradient-via-stops,va
+r(--tw-gradient-posit
+ion),var(--tw-gradien
+t-from)var(--tw-gradi
+ent-from-position),va
+r(--tw-gradient-to)va
+r(--tw-gradient-to-po
+sition))}.bg-cover{ba
+ckground-size:cover}.
+bg-fixed{background-a
+ttachment:fixed}.bg-c
+enter{background-posi
+tion:50%}.bg-no-repea
+t{background-repeat:n
+o-repeat}.fill-black{
+fill:var(--color-blac
+k)}.stroke-\\[2\\.5\\
+]{stroke-width:2.5px}
+.object-cover{object-
+fit:cover}.p-1{paddin
+g:calc(var(--spacing)
+*1)}.p-2{padding:calc
+(var(--spacing)*2)}.p
+-3{padding:calc(var(-
+-spacing)*3)}.p-4{pad
+ding:calc(var(--spaci
+ng)*4)}.p-6{padding:c
+alc(var(--spacing)*6)
+}.p-8{padding:calc(va
+r(--spacing)*8)}.p-10
+{padding:calc(var(--s
+pacing)*10)}.p-12{pad
+ding:calc(var(--spaci
+ng)*12)}.p-20{padding
+:calc(var(--spacing)*
+20)}.px-2{padding-inl
+ine:calc(var(--spacin
+g)*2)}.px-3{padding-i
+nline:calc(var(--spac
+ing)*3)}.px-4{padding
+-inline:calc(var(--sp
+acing)*4)}.px-5{paddi
+ng-inline:calc(var(--
+spacing)*5)}.px-6{pad
+ding-inline:calc(var(
+--spacing)*6)}.px-8{p
+adding-inline:calc(va
+r(--spacing)*8)}.px-1
+2{padding-inline:calc
+(var(--spacing)*12)}.
+px-14{padding-inline:
+calc(var(--spacing)*1
+4)}.px-16{padding-inl
+ine:calc(var(--spacin
+g)*16)}.py-1{padding-
+block:calc(var(--spac
+ing)*1)}.py-1\\.5{pad
+ding-block:calc(var(-
+-spacing)*1.5)}.py-2{
+padding-block:calc(va
+r(--spacing)*2)}.py-3
+{padding-block:calc(v
+ar(--spacing)*3)}.py-
+4{padding-block:calc(
+var(--spacing)*4)}.py
+-5{padding-block:calc
+(var(--spacing)*5)}.p
+y-6{padding-block:cal
+c(var(--spacing)*6)}.
+py-7{padding-block:ca
+lc(var(--spacing)*7)}
+.py-8{padding-block:c
+alc(var(--spacing)*8)
+}.py-12{padding-block
+:calc(var(--spacing)*
+12)}.py-16{padding-bl
+ock:calc(var(--spacin
+g)*16)}.py-20{padding
+-block:calc(var(--spa
+cing)*20)}.py-24{padd
+ing-block:calc(var(--
+spacing)*24)}.py-32{p
+adding-block:calc(var
+(--spacing)*32)}.py-4
+0{padding-block:calc(
+var(--spacing)*40)}.p
+t-4{padding-top:calc(
+var(--spacing)*4)}.pt
+-16{padding-top:calc(
+var(--spacing)*16)}.p
+t-20{padding-top:calc
+(var(--spacing)*20)}.
+pt-24{padding-top:cal
+c(var(--spacing)*24)}
+.pb-1{padding-bottom:
+calc(var(--spacing)*1
+)}.pb-2{padding-botto
+m:calc(var(--spacing)
+*2)}.pb-4{padding-bot
+tom:calc(var(--spacin
+g)*4)}.pb-8{padding-b
+ottom:calc(var(--spac
+ing)*8)}.text-center{
+text-align:center}.te
+xt-left{text-align:le
+ft}.text-right{text-a
+lign:right}.font-mono
+{font-family:var(--fo
+nt-mono)}.font-sans{f
+ont-family:var(--font
+-sans)}.text-2xl{font
+-size:var(--text-2xl)
+;line-height:var(--tw
+-leading,var(--text-2
+xl--line-height))}.te
+xt-3xl{font-size:var(
+--text-3xl);line-heig
+ht:var(--tw-leading,v
+ar(--text-3xl--line-h
+eight))}.text-4xl{fon
+t-size:var(--text-4xl
+);line-height:var(--t
+w-leading,var(--text-
+4xl--line-height))}.t
+ext-5xl{font-size:var
+(--text-5xl);line-hei
+ght:var(--tw-leading,
+var(--text-5xl--line-
+height))}.text-6xl{fo
+nt-size:var(--text-6x
+l);line-height:var(--
+tw-leading,var(--text
+-6xl--line-height))}.
+text-7xl{font-size:va
+r(--text-7xl);line-he
+ight:var(--tw-leading
+,var(--text-7xl--line
+-height))}.text-8xl{f
+ont-size:var(--text-8
+xl);line-height:var(-
+-tw-leading,var(--tex
+t-8xl--line-height))}
+.text-lg{font-size:va
+r(--text-lg);line-hei
+ght:var(--tw-leading,
+var(--text-lg--line-h
+eight))}.text-sm{font
+-size:var(--text-sm);
+line-height:var(--tw-
+leading,var(--text-sm
+--line-height))}.text
+-xl{font-size:var(--t
+ext-xl);line-height:v
+ar(--tw-leading,var(-
+-text-xl--line-height
+))}.text-xs{font-size
+:var(--text-xs);line-
+height:var(--tw-leadi
+ng,var(--text-xs--lin
+e-height))}.text-\\[9
+px\\]{font-size:9px}.
+text-\\[10px\\]{font-
+size:10px}.text-\\[25
+vw\\]{font-size:25vw}
+.leading-\\[0\\.85\\]
+{--tw-leading:.85;lin
+e-height:.85}.leading
+-none{--tw-leading:1;
+line-height:1}.leadin
+g-relaxed{--tw-leadin
+g:var(--leading-relax
+ed);line-height:var(-
+-leading-relaxed)}.fo
+nt-black{--tw-font-we
+ight:var(--font-weigh
+t-black);font-weight:
+var(--font-weight-bla
+ck)}.font-bold{--tw-f
+ont-weight:var(--font
+-weight-bold);font-we
+ight:var(--font-weigh
+t-bold)}.font-extrabo
+ld{--tw-font-weight:v
+ar(--font-weight-extr
+abold);font-weight:va
+r(--font-weight-extra
+bold)}.font-medium{--
+tw-font-weight:var(--
+font-weight-medium);f
+ont-weight:var(--font
+-weight-medium)}.trac
+king-\\[0\\.2em\\]{--
+tw-tracking:.2em;lett
+er-spacing:.2em}.trac
+king-\\[0\\.3em\\]{--
+tw-tracking:.3em;lett
+er-spacing:.3em}.trac
+king-\\[0\\.4em\\]{--
+tw-tracking:.4em;lett
+er-spacing:.4em}.trac
+king-\\[0\\.5em\\]{--
+tw-tracking:.5em;lett
+er-spacing:.5em}.trac
+king-\\[0\\.25em\\]{-
+-tw-tracking:.25em;le
+tter-spacing:.25em}.t
+racking-tight{--tw-tr
+acking:var(--tracking
+-tight);letter-spacin
+g:var(--tracking-tigh
+t)}.tracking-tighter{
+--tw-tracking:var(--t
+racking-tighter);lett
+er-spacing:var(--trac
+king-tighter)}.tracki
+ng-wide{--tw-tracking
+:var(--tracking-wide)
+;letter-spacing:var(-
+-tracking-wide)}.trac
+king-wider{--tw-track
+ing:var(--tracking-wi
+der);letter-spacing:v
+ar(--tracking-wider)}
+.tracking-widest{--tw
+-tracking:var(--track
+ing-widest);letter-sp
+acing:var(--tracking-
+widest)}.whitespace-n
+owrap{white-space:now
+rap}.text-black{color
+:var(--color-black)}.
+text-black\\/60{color
+:#0009}@supports 
+(color:color-mix(in 
+lab, red, red)){.text
+-black\\/60{color:col
+or-mix(in oklab,var(-
+-color-black)60%,tran
+sparent)}}.text-gray-
+300{color:var(--color
+-gray-300)}.text-gray
+-400{color:var(--colo
+r-gray-400)}.text-gra
+y-500{color:var(--col
+or-gray-500)}.text-gr
+ay-600{color:var(--co
+lor-gray-600)}.text-g
+reen-400{color:var(--
+color-green-400)}.tex
+t-neutral-100{color:v
+ar(--color-neutral-10
+0)}.text-neutral-200{
+color:var(--color-neu
+tral-200)}.text-neutr
+al-300{color:var(--co
+lor-neutral-300)}.tex
+t-neutral-400{color:v
+ar(--color-neutral-40
+0)}.text-neutral-500{
+color:var(--color-neu
+tral-500)}.text-neutr
+al-600{color:var(--co
+lor-neutral-600)}.tex
+t-red-200{color:var(-
+-color-red-200)}.text
+-red-400{color:var(--
+color-red-400)}.text-
+red-500{color:var(--c
+olor-red-500)}.text-w
+hite{color:var(--colo
+r-white)}.text-white\
+\/5{color:#ffffff0d}@
+supports 
+(color:color-mix(in 
+lab, red, red)){.text
+-white\\/5{color:colo
+r-mix(in oklab,var(--
+color-white)5%,transp
+arent)}}.text-white\\
+/10{color:#ffffff1a}@
+supports 
+(color:color-mix(in 
+lab, red, red)){.text
+-white\\/10{color:col
+or-mix(in oklab,var(-
+-color-white)10%,tran
+sparent)}}.text-white
+\\/20{color:#fff3}@su
+pports 
+(color:color-mix(in 
+lab, red, red)){.text
+-white\\/20{color:col
+or-mix(in oklab,var(-
+-color-white)20%,tran
+sparent)}}.text-white
+\\/30{color:#ffffff4d
+}@supports 
+(color:color-mix(in 
+lab, red, red)){.text
+-white\\/30{color:col
+or-mix(in oklab,var(-
+-color-white)30%,tran
+sparent)}}.text-white
+\\/40{color:#fff6}@su
+pports 
+(color:color-mix(in 
+lab, red, red)){.text
+-white\\/40{color:col
+or-mix(in oklab,var(-
+-color-white)40%,tran
+sparent)}}.text-white
+\\/50{color:#ffffff80
+}@supports 
+(color:color-mix(in 
+lab, red, red)){.text
+-white\\/50{color:col
+or-mix(in oklab,var(-
+-color-white)50%,tran
+sparent)}}.text-white
+\\/70{color:#ffffffb3
+}@supports 
+(color:color-mix(in 
+lab, red, red)){.text
+-white\\/70{color:col
+or-mix(in oklab,var(-
+-color-white)70%,tran
+sparent)}}.text-white
+\\/90{color:#ffffffe6
+}@supports 
+(color:color-mix(in 
+lab, red, red)){.text
+-white\\/90{color:col
+or-mix(in oklab,var(-
+-color-white)90%,tran
+sparent)}}.lowercase{
+text-transform:lowerc
+ase}.uppercase{text-t
+ransform:uppercase}.i
+talic{font-style:ital
+ic}.line-through{text
+-decoration-line:line
+-through}.antialiased
+{-webkit-font-smoothi
+ng:antialiased;-moz-o
+sx-font-smoothing:gra
+yscale}.opacity-0{opa
+city:0}.opacity-5{opa
+city:.05}.opacity-20{
+opacity:.2}.opacity-3
+0{opacity:.3}.opacity
+-40{opacity:.4}.opaci
+ty-50{opacity:.5}.opa
+city-70{opacity:.7}.o
+pacity-100{opacity:1}
+.opacity-\\[0\\.03\\]
+{opacity:.03}.mix-ble
+nd-difference{mix-ble
+nd-mode:difference}.m
+ix-blend-overlay{mix-
+blend-mode:overlay}.s
+hadow{--tw-shadow:0 
+1px 3px 0 var(--tw-sh
+adow-color,#0000001a)
+,0 1px 2px -1px var(-
+-tw-shadow-color,#000
+0001a);box-shadow:var
+(--tw-inset-shadow),v
+ar(--tw-inset-ring-sh
+adow),var(--tw-ring-o
+ffset-shadow),var(--t
+w-ring-shadow),var(--
+tw-shadow)}.shadow-2x
+l{--tw-shadow:0 25px 
+50px -12px var(--tw-s
+hadow-color,#00000040
+);box-shadow:var(--tw
+-inset-shadow),var(--
+tw-inset-ring-shadow)
+,var(--tw-ring-offset
+-shadow),var(--tw-rin
+g-shadow),var(--tw-sh
+adow)}.shadow-\\[0_0_
+20px_rgba\\(255\\,255
+\\,255\\,0\\.2\\)\\]{
+--tw-shadow:0 0 20px 
+var(--tw-shadow-color
+,#fff3);box-shadow:va
+r(--tw-inset-shadow),
+var(--tw-inset-ring-s
+hadow),var(--tw-ring-
+offset-shadow),var(--
+tw-ring-shadow),var(-
+-tw-shadow)}.shadow-\
+\[0_0_20px_rgba\\(255
+\\,255\\,255\\,0\\.5\
+\)\\]{--tw-shadow:0 
+0 20px var(--tw-shado
+w-color,#ffffff80);bo
+x-shadow:var(--tw-ins
+et-shadow),var(--tw-i
+nset-ring-shadow),var
+(--tw-ring-offset-sha
+dow),var(--tw-ring-sh
+adow),var(--tw-shadow
+)}.shadow-\\[0_0_30px
+_rgba\\(255\\,255\\,2
+55\\,0\\.2\\)\\]{--tw
+-shadow:0 0 30px var(
+--tw-shadow-color,#ff
+f3);box-shadow:var(--
+tw-inset-shadow),var(
+--tw-inset-ring-shado
+w),var(--tw-ring-offs
+et-shadow),var(--tw-r
+ing-shadow),var(--tw-
+shadow)}.shadow-sm{--
+tw-shadow:0 1px 3px 
+0 var(--tw-shadow-col
+or,#0000001a),0 1px 
+2px -1px var(--tw-sha
+dow-color,#0000001a);
+box-shadow:var(--tw-i
+nset-shadow),var(--tw
+-inset-ring-shadow),v
+ar(--tw-ring-offset-s
+hadow),var(--tw-ring-
+shadow),var(--tw-shad
+ow)}.shadow-xl{--tw-s
+hadow:0 20px 25px 
+-5px var(--tw-shadow-
+color,#0000001a),0 
+8px 10px -6px var(--t
+w-shadow-color,#00000
+01a);box-shadow:var(-
+-tw-inset-shadow),var
+(--tw-inset-ring-shad
+ow),var(--tw-ring-off
+set-shadow),var(--tw-
+ring-shadow),var(--tw
+-shadow)}.blur-\\[120
+px\\]{--tw-blur:blur(
+120px);filter:var(--t
+w-blur,)var(--tw-brig
+htness,)var(--tw-cont
+rast,)var(--tw-graysc
+ale,)var(--tw-hue-rot
+ate,)var(--tw-invert,
+)var(--tw-saturate,)v
+ar(--tw-sepia,)var(--
+tw-drop-shadow,)}.blu
+r-sm{--tw-blur:blur(v
+ar(--blur-sm));filter
+:var(--tw-blur,)var(-
+-tw-brightness,)var(-
+-tw-contrast,)var(--t
+w-grayscale,)var(--tw
+-hue-rotate,)var(--tw
+-invert,)var(--tw-sat
+urate,)var(--tw-sepia
+,)var(--tw-drop-shado
+w,)}.blur-xl{--tw-blu
+r:blur(var(--blur-xl)
+);filter:var(--tw-blu
+r,)var(--tw-brightnes
+s,)var(--tw-contrast,
+)var(--tw-grayscale,)
+var(--tw-hue-rotate,)
+var(--tw-invert,)var(
+--tw-saturate,)var(--
+tw-sepia,)var(--tw-dr
+op-shadow,)}.grayscal
+e{--tw-grayscale:gray
+scale(100%);filter:va
+r(--tw-blur,)var(--tw
+-brightness,)var(--tw
+-contrast,)var(--tw-g
+rayscale,)var(--tw-hu
+e-rotate,)var(--tw-in
+vert,)var(--tw-satura
+te,)var(--tw-sepia,)v
+ar(--tw-drop-shadow,)
+}.filter{filter:var(-
+-tw-blur,)var(--tw-br
+ightness,)var(--tw-co
+ntrast,)var(--tw-gray
+scale,)var(--tw-hue-r
+otate,)var(--tw-inver
+t,)var(--tw-saturate,
+)var(--tw-sepia,)var(
+--tw-drop-shadow,)}.b
+ackdrop-blur-md{--tw-
+backdrop-blur:blur(va
+r(--blur-md));-webkit
+-backdrop-filter:var(
+--tw-backdrop-blur,)v
+ar(--tw-backdrop-brig
+htness,)var(--tw-back
+drop-contrast,)var(--
+tw-backdrop-grayscale
+,)var(--tw-backdrop-h
+ue-rotate,)var(--tw-b
+ackdrop-invert,)var(-
+-tw-backdrop-opacity,
+)var(--tw-backdrop-sa
+turate,)var(--tw-back
+drop-sepia,);backdrop
+-filter:var(--tw-back
+drop-blur,)var(--tw-b
+ackdrop-brightness,)v
+ar(--tw-backdrop-cont
+rast,)var(--tw-backdr
+op-grayscale,)var(--t
+w-backdrop-hue-rotate
+,)var(--tw-backdrop-i
+nvert,)var(--tw-backd
+rop-opacity,)var(--tw
+-backdrop-saturate,)v
+ar(--tw-backdrop-sepi
+a,)}.backdrop-blur-sm
+{--tw-backdrop-blur:b
+lur(var(--blur-sm));-
+webkit-backdrop-filte
+r:var(--tw-backdrop-b
+lur,)var(--tw-backdro
+p-brightness,)var(--t
+w-backdrop-contrast,)
+var(--tw-backdrop-gra
+yscale,)var(--tw-back
+drop-hue-rotate,)var(
+--tw-backdrop-invert,
+)var(--tw-backdrop-op
+acity,)var(--tw-backd
+rop-saturate,)var(--t
+w-backdrop-sepia,);ba
+ckdrop-filter:var(--t
+w-backdrop-blur,)var(
+--tw-backdrop-brightn
+ess,)var(--tw-backdro
+p-contrast,)var(--tw-
+backdrop-grayscale,)v
+ar(--tw-backdrop-hue-
+rotate,)var(--tw-back
+drop-invert,)var(--tw
+-backdrop-opacity,)va
+r(--tw-backdrop-satur
+ate,)var(--tw-backdro
+p-sepia,)}.backdrop-b
+lur-xl{--tw-backdrop-
+blur:blur(var(--blur-
+xl));-webkit-backdrop
+-filter:var(--tw-back
+drop-blur,)var(--tw-b
+ackdrop-brightness,)v
+ar(--tw-backdrop-cont
+rast,)var(--tw-backdr
+op-grayscale,)var(--t
+w-backdrop-hue-rotate
+,)var(--tw-backdrop-i
+nvert,)var(--tw-backd
+rop-opacity,)var(--tw
+-backdrop-saturate,)v
+ar(--tw-backdrop-sepi
+a,);backdrop-filter:v
+ar(--tw-backdrop-blur
+,)var(--tw-backdrop-b
+rightness,)var(--tw-b
+ackdrop-contrast,)var
+(--tw-backdrop-graysc
+ale,)var(--tw-backdro
+p-hue-rotate,)var(--t
+w-backdrop-invert,)va
+r(--tw-backdrop-opaci
+ty,)var(--tw-backdrop
+-saturate,)var(--tw-b
+ackdrop-sepia,)}.back
+drop-filter{-webkit-b
+ackdrop-filter:var(--
+tw-backdrop-blur,)var
+(--tw-backdrop-bright
+ness,)var(--tw-backdr
+op-contrast,)var(--tw
+-backdrop-grayscale,)
+var(--tw-backdrop-hue
+-rotate,)var(--tw-bac
+kdrop-invert,)var(--t
+w-backdrop-opacity,)v
+ar(--tw-backdrop-satu
+rate,)var(--tw-backdr
+op-sepia,);backdrop-f
+ilter:var(--tw-backdr
+op-blur,)var(--tw-bac
+kdrop-brightness,)var
+(--tw-backdrop-contra
+st,)var(--tw-backdrop
+-grayscale,)var(--tw-
+backdrop-hue-rotate,)
+var(--tw-backdrop-inv
+ert,)var(--tw-backdro
+p-opacity,)var(--tw-b
+ackdrop-saturate,)var
+(--tw-backdrop-sepia,
+)}.transition{transit
+ion-property:color,ba
+ckground-color,border
+-color,outline-color,
+text-decoration-color
+,fill,stroke,--tw-gra
+dient-from,--tw-gradi
+ent-via,--tw-gradient
+-to,opacity,box-shado
+w,transform,translate
+,scale,rotate,filter,
+-webkit-backdrop-filt
+er,backdrop-filter,di
+splay,content-visibil
+ity,overlay,pointer-e
+vents;transition-timi
+ng-function:var(--tw-
+ease,var(--default-tr
+ansition-timing-funct
+ion));transition-dura
+tion:var(--tw-duratio
+n,var(--default-trans
+ition-duration))}.tra
+nsition-all{transitio
+n-property:all;transi
+tion-timing-function:
+var(--tw-ease,var(--d
+efault-transition-tim
+ing-function));transi
+tion-duration:var(--t
+w-duration,var(--defa
+ult-transition-durati
+on))}.transition-colo
+rs{transition-propert
+y:color,background-co
+lor,border-color,outl
+ine-color,text-decora
+tion-color,fill,strok
+e,--tw-gradient-from,
+--tw-gradient-via,--t
+w-gradient-to;transit
+ion-timing-function:v
+ar(--tw-ease,var(--de
+fault-transition-timi
+ng-function));transit
+ion-duration:var(--tw
+-duration,var(--defau
+lt-transition-duratio
+n))}.transition-opaci
+ty{transition-propert
+y:opacity;transition-
+timing-function:var(-
+-tw-ease,var(--defaul
+t-transition-timing-f
+unction));transition-
+duration:var(--tw-dur
+ation,var(--default-t
+ransition-duration))}
+.transition-transform
+{transition-property:
+transform,translate,s
+cale,rotate;transitio
+n-timing-function:var
+(--tw-ease,var(--defa
+ult-transition-timing
+-function));transitio
+n-duration:var(--tw-d
+uration,var(--default
+-transition-duration)
+)}.delay-75{transitio
+n-delay:75ms}.duratio
+n-100{--tw-duration:.
+1s;transition-duratio
+n:.1s}.duration-300{-
+-tw-duration:.3s;tran
+sition-duration:.3s}.
+duration-500{--tw-dur
+ation:.5s;transition-
+duration:.5s}.duratio
+n-700{--tw-duration:.
+7s;transition-duratio
+n:.7s}.duration-1000{
+--tw-duration:1s;tran
+sition-duration:1s}.e
+ase-out{--tw-ease:var
+(--ease-out);transiti
+on-timing-function:va
+r(--ease-out)}.outlin
+e-none{--tw-outline-s
+tyle:none;outline-sty
+le:none}.select-none{
+-webkit-user-select:n
+one;user-select:none}
+.group-focus-within\\
+:text-black:is(:where
+(.group):focus-within
+ *){color:var(--color
+-black)}@media (hover
+:hover){.group-hover\
+\:w-full:is(:where(.g
+roup):hover *){width:
+100%}.group-hover\\:t
+ranslate-x-1:is(:wher
+e(.group):hover *){--
+tw-translate-x:calc(v
+ar(--spacing)*1);tran
+slate:var(--tw-transl
+ate-x)var(--tw-transl
+ate-y)}.group-hover\\
+:translate-x-2:is(:wh
+ere(.group):hover *){
+--tw-translate-x:calc
+(var(--spacing)*2);tr
+anslate:var(--tw-tran
+slate-x)var(--tw-tran
+slate-y)}.group-hover
+\\:translate-x-\\[-2p
+x\\]:is(:where(.group
+):hover *){--tw-trans
+late-x:-2px;translate
+:var(--tw-translate-x
+)var(--tw-translate-y
+)}.group-hover\\:tran
+slate-x-\\[2px\\]:is(
+:where(.group):hover 
+*){--tw-translate-x:2
+px;translate:var(--tw
+-translate-x)var(--tw
+-translate-y)}.group-
+hover\\:translate-y-0
+:is(:where(.group):ho
+ver *){--tw-translate
+-y:calc(var(--spacing
+)*0);translate:var(--
+tw-translate-x)var(--
+tw-translate-y)}.grou
+p-hover\\:scale-110:i
+s(:where(.group):hove
+r *){--tw-scale-x:110
+%;--tw-scale-y:110%;-
+-tw-scale-z:110%;scal
+e:var(--tw-scale-x)va
+r(--tw-scale-y)}.grou
+p-hover\\:animate-pul
+se:is(:where(.group):
+hover *){animation:va
+r(--animate-pulse)}.g
+roup-hover\\:bg-black
+\\/20:is(:where(.grou
+p):hover *){backgroun
+d-color:#0003}@suppor
+ts 
+(color:color-mix(in 
+lab, red, red)){.grou
+p-hover\\:bg-black\\/
+20:is(:where(.group):
+hover *){background-c
+olor:color-mix(in okl
+ab,var(--color-black)
+20%,transparent)}}.gr
+oup-hover\\:text-neut
+ral-200:is(:where(.gr
+oup):hover *){color:v
+ar(--color-neutral-20
+0)}.group-hover\\:tex
+t-white:is(:where(.gr
+oup):hover *){color:v
+ar(--color-white)}.gr
+oup-hover\\:opacity-7
+0:is(:where(.group):h
+over *){opacity:.7}.g
+roup-hover\\:opacity-
+100:is(:where(.group)
+:hover *){opacity:1}.
+group-hover\\:graysca
+le-0:is(:where(.group
+):hover *){--tw-grays
+cale:grayscale(0%);fi
+lter:var(--tw-blur,)v
+ar(--tw-brightness,)v
+ar(--tw-contrast,)var
+(--tw-grayscale,)var(
+--tw-hue-rotate,)var(
+--tw-invert,)var(--tw
+-saturate,)var(--tw-s
+epia,)var(--tw-drop-s
+hadow,)}}.placeholder
+\\:text-neutral-300::
+placeholder{color:var
+(--color-neutral-300)
+}.placeholder\\:text-
+white\\/20::placehold
+er{color:#fff3}@suppo
+rts 
+(color:color-mix(in 
+lab, red, red)){.plac
+eholder\\:text-white\
+\/20::placeholder{col
+or:color-mix(in oklab
+,var(--color-white)20
+%,transparent)}}@medi
+a (hover:hover){.hove
+r\\:-translate-y-3:ho
+ver{--tw-translate-y:
+calc(var(--spacing)*-
+3);translate:var(--tw
+-translate-x)var(--tw
+-translate-y)}.hover\
+\:scale-105:hover{--t
+w-scale-x:105%;--tw-s
+cale-y:105%;--tw-scal
+e-z:105%;scale:var(--
+tw-scale-x)var(--tw-s
+cale-y)}.hover\\:scal
+e-110:hover{--tw-scal
+e-x:110%;--tw-scale-y
+:110%;--tw-scale-z:11
+0%;scale:var(--tw-sca
+le-x)var(--tw-scale-y
+)}.hover\\:scale-125:
+hover{--tw-scale-x:12
+5%;--tw-scale-y:125%;
+--tw-scale-z:125%;sca
+le:var(--tw-scale-x)v
+ar(--tw-scale-y)}.hov
+er\\:scale-\\[1\\.02\
+\]:hover{scale:1.02}.
+hover\\:border-black\
+\/20:hover{border-col
+or:#0003}@supports 
+(color:color-mix(in 
+lab, red, red)){.hove
+r\\:border-black\\/20
+:hover{border-color:c
+olor-mix(in oklab,var
+(--color-black)20%,tr
+ansparent)}}.hover\\:
+border-neutral-400:ho
+ver{border-color:var(
+--color-neutral-400)}
+.hover\\:border-pink-
+500:hover{border-colo
+r:var(--color-pink-50
+0)}.hover\\:border-wh
+ite:hover{border-colo
+r:var(--color-white)}
+.hover\\:bg-black:hov
+er{background-color:v
+ar(--color-black)}.ho
+ver\\:bg-green-400:ho
+ver{background-color:
+var(--color-green-400
+)}.hover\\:bg-neutral
+-200:hover{background
+-color:var(--color-ne
+utral-200)}.hover\\:b
+g-neutral-800:hover{b
+ackground-color:var(-
+-color-neutral-800)}.
+hover\\:bg-pink-500:h
+over{background-color
+:var(--color-pink-500
+)}.hover\\:bg-red-500
+\\/20:hover{backgroun
+d-color:#fb2c3633}@su
+pports 
+(color:color-mix(in 
+lab, red, red)){.hove
+r\\:bg-red-500\\/20:h
+over{background-color
+:color-mix(in oklab,v
+ar(--color-red-500)20
+%,transparent)}}.hove
+r\\:bg-white:hover{ba
+ckground-color:var(--
+color-white)}.hover\\
+:bg-white\\/10:hover{
+background-color:#fff
+fff1a}@supports 
+(color:color-mix(in 
+lab, red, red)){.hove
+r\\:bg-white\\/10:hov
+er{background-color:c
+olor-mix(in oklab,var
+(--color-white)10%,tr
+ansparent)}}.hover\\:
+bg-white\\/20:hover{b
+ackground-color:#fff3
+}@supports 
+(color:color-mix(in 
+lab, red, red)){.hove
+r\\:bg-white\\/20:hov
+er{background-color:c
+olor-mix(in oklab,var
+(--color-white)20%,tr
+ansparent)}}.hover\\:
+bg-white\\/\\[0\\.02\
+\]:hover{background-c
+olor:#ffffff05}@suppo
+rts 
+(color:color-mix(in 
+lab, red, red)){.hove
+r\\:bg-white\\/\\[0\\
+.02\\]:hover{backgrou
+nd-color:color-mix(in
+ oklab,var(--color-wh
+ite)2%,transparent)}}
+.hover\\:text-black:h
+over{color:var(--colo
+r-black)}.hover\\:tex
+t-neutral-400:hover{c
+olor:var(--color-neut
+ral-400)}.hover\\:tex
+t-red-500:hover{color
+:var(--color-red-500)
+}.hover\\:text-white:
+hover{color:var(--col
+or-white)}.hover\\:un
+derline:hover{text-de
+coration-line:underli
+ne}.hover\\:shadow-\\
+[0_20px_50px_rgba\\(0
+\\,0\\,0\\,0\\.5\\)\\
+]:hover{--tw-shadow:0
+ 20px 50px var(--tw-s
+hadow-color,#00000080
+);box-shadow:var(--tw
+-inset-shadow),var(--
+tw-inset-ring-shadow)
+,var(--tw-ring-offset
+-shadow),var(--tw-rin
+g-shadow),var(--tw-sh
+adow)}}.focus\\:borde
+r-black\\/20:focus{bo
+rder-color:#0003}@sup
+ports 
+(color:color-mix(in 
+lab, red, red)){.focu
+s\\:border-black\\/20
+:focus{border-color:c
+olor-mix(in oklab,var
+(--color-black)20%,tr
+ansparent)}}.focus\\:
+border-white:focus{bo
+rder-color:var(--colo
+r-white)}.focus\\:out
+line-none:focus{--tw-
+outline-style:none;ou
+tline-style:none}.act
+ive\\:scale-95:active
+{--tw-scale-x:95%;--t
+w-scale-y:95%;--tw-sc
+ale-z:95%;scale:var(-
+-tw-scale-x)var(--tw-
+scale-y)}.active\\:sc
+ale-\\[0\\.98\\]:acti
+ve{scale:.98}.disable
+d\\:opacity-50:disabl
+ed{opacity:.5}@media 
+(min-width:40rem){.sm
+\\:grid-cols-2{grid-t
+emplate-columns:repea
+t(2,minmax(0,1fr))}.s
+m\\:flex-row{flex-dir
+ection:row}.sm\\:px-6
+{padding-inline:calc(
+var(--spacing)*6)}}@m
+edia (min-width:48rem
+){.md\\:col-span-2{gr
+id-column:span 
+2/span 2}.md\\:-mt-8{
+margin-top:calc(var(-
+-spacing)*-8)}.md\\:m
+b-8{margin-bottom:cal
+c(var(--spacing)*8)}.
+md\\:block{display:bl
+ock}.md\\:flex{displa
+y:flex}.md\\:hidden{d
+isplay:none}.md\\:h-2
+4{height:calc(var(--s
+pacing)*24)}.md\\:w-6
+4{width:calc(var(--sp
+acing)*64)}.md\\:grid
+-cols-2{grid-template
+-columns:repeat(2,min
+max(0,1fr))}.md\\:gri
+d-cols-3{grid-templat
+e-columns:repeat(3,mi
+nmax(0,1fr))}.md\\:fl
+ex-row{flex-direction
+:row}.md\\:items-cent
+er{align-items:center
+}.md\\:items-end{alig
+n-items:flex-end}:whe
+re(.md\\:space-x-8>:n
+ot(:last-child)){--tw
+-space-x-reverse:0;ma
+rgin-inline-start:cal
+c(calc(var(--spacing)
+*8)*var(--tw-space-x-
+reverse));margin-inli
+ne-end:calc(calc(var(
+--spacing)*8)*calc(1 
+- var(--tw-space-x-re
+verse)))}.md\\:rounde
+d-\\[2rem\\]{border-r
+adius:2rem}.md\\:roun
+ded-\\[5rem\\]{border
+-radius:5rem}.md\\:ro
+unded-full{border-rad
+ius:3.40282e38px}.md\
+\:p-20{padding:calc(v
+ar(--spacing)*20)}.md
+\\:p-24{padding:calc(
+var(--spacing)*24)}.m
+d\\:px-8{padding-inli
+ne:calc(var(--spacing
+)*8)}.md\\:px-10{padd
+ing-inline:calc(var(-
+-spacing)*10)}.md\\:t
+ext-left{text-align:l
+eft}.md\\:text-3xl{fo
+nt-size:var(--text-3x
+l);line-height:var(--
+tw-leading,var(--text
+-3xl--line-height))}.
+md\\:text-5xl{font-si
+ze:var(--text-5xl);li
+ne-height:var(--tw-le
+ading,var(--text-5xl-
+-line-height))}.md\\:
+text-6xl{font-size:va
+r(--text-6xl);line-he
+ight:var(--tw-leading
+,var(--text-6xl--line
+-height))}.md\\:text-
+7xl{font-size:var(--t
+ext-7xl);line-height:
+var(--tw-leading,var(
+--text-7xl--line-heig
+ht))}.md\\:text-8xl{f
+ont-size:var(--text-8
+xl);line-height:var(-
+-tw-leading,var(--tex
+t-8xl--line-height))}
+.md\\:text-9xl{font-s
+ize:var(--text-9xl);l
+ine-height:var(--tw-l
+eading,var(--text-9xl
+--line-height))}.md\\
+:text-\\[12rem\\]{fon
+t-size:12rem}}@media 
+(min-width:64rem){.lg
+\\:grid-cols-2{grid-t
+emplate-columns:repea
+t(2,minmax(0,1fr))}.l
+g\\:grid-cols-3{grid-
+template-columns:repe
+at(3,minmax(0,1fr))}.
+lg\\:grid-cols-4{grid
+-template-columns:rep
+eat(4,minmax(0,1fr))}
+.lg\\:px-10{padding-i
+nline:calc(var(--spac
+ing)*10)}.lg\\:text-7
+xl{font-size:var(--te
+xt-7xl);line-height:v
+ar(--tw-leading,var(-
+-text-7xl--line-heigh
+t))}.lg\\:text-\\[11r
+em\\]{font-size:11rem
+}}.glass-morphism{-we
+bkit-backdrop-filter:
+blur(20px);backdrop-f
+ilter:blur(20px);back
+ground-color:#ffffffb
+3;border:1px solid #0
+000000d}.dark-glass{-
+webkit-backdrop-filte
+r:blur(20px);backdrop
+-filter:blur(20px);ba
+ckground-color:#00000
+0b3;border:1px solid 
+#ffffff1a}.premium-sh
+adow{box-shadow:0 
+10px 40px -10px #0000
+001a}.hover-card{tran
+sition:all .4s cubic-
+bezier(.23,1,.32,1);t
+ransform:translateY(0
+)}.hover-card:hover{t
+ransform:translateY(-
+8px);box-shadow:0 
+20px 60px -15px #0000
+0026}.text-outline{-w
+ebkit-text-stroke:1px
+ currentColor;color:#
+0000}.section-padding
+{padding-top:5rem;pad
+ding-bottom:5rem}}:ro
+ot{--background:#fff;
+--foreground:#000;--s
+urface:#f9f9f9;--acce
+nt-blue:#2563eb;--acc
+ent-red:#dc2626;--pla
+tinum:#f5f5f7;--borde
+r-light:#00000014;--b
+order-dark:#ffffff1a}
+[data-theme=dark]{--b
+ackground:#000;--fore
+ground:#fff;--surface
+:#111}body{color:var(
+--foreground);backgro
+und:var(--background)
+;font-family:var(--fo
+nt-outfit),sans-serif
+;-webkit-font-smoothi
+ng:antialiased}h1,h2,
+h3,h4,h5,h6{font-fami
+ly:var(--font-unbound
+ed),sans-serif;letter
+-spacing:-.04em;font-
+weight:800}::-webkit-
+scrollbar{width:4px}:
+:-webkit-scrollbar-tr
+ack{background:0 0}::
+-webkit-scrollbar-thu
+mb{background:#000;bo
+rder-radius:0}@keyfra
+mes float{0%,to{trans
+form:translateY(0)}50
+%{transform:translate
+Y(-15px)}}.animate-fl
+oat{animation:5s 
+ease-in-out infinite 
+float}@property --tw-
+translate-x{syntax:\"
+*\";inherits:false;in
+itial-value:0}@proper
+ty --tw-translate-y{s
+yntax:\"*\";inherits:
+false;initial-value:0
+}@property --tw-trans
+late-z{syntax:\"*\";i
+nherits:false;initial
+-value:0}@property --
+tw-scale-x{syntax:\"*
+\";inherits:false;ini
+tial-value:1}@propert
+y --tw-scale-y{syntax
+:\"*\";inherits:false
+;initial-value:1}@pro
+perty --tw-scale-z{sy
+ntax:\"*\";inherits:f
+alse;initial-value:1}
+@property --tw-rotate
+-x{syntax:\"*\";inher
+its:false}@property -
+-tw-rotate-y{syntax:\
+"*\";inherits:false}@
+property --tw-rotate-
+z{syntax:\"*\";inheri
+ts:false}@property --
+tw-skew-x{syntax:\"*\
+";inherits:false}@pro
+perty --tw-skew-y{syn
+tax:\"*\";inherits:fa
+lse}@property --tw-sp
+ace-y-reverse{syntax:
+\"*\";inherits:false;
+initial-value:0}@prop
+erty --tw-space-x-rev
+erse{syntax:\"*\";inh
+erits:false;initial-v
+alue:0}@property --tw
+-divide-y-reverse{syn
+tax:\"*\";inherits:fa
+lse;initial-value:0}@
+property --tw-border-
+style{syntax:\"*\";in
+herits:false;initial-
+value:solid}@property
+ --tw-gradient-positi
+on{syntax:\"*\";inher
+its:false}@property -
+-tw-gradient-from{syn
+tax:\"<color>\";inher
+its:false;initial-val
+ue:#0000}@property --
+tw-gradient-via{synta
+x:\"<color>\";inherit
+s:false;initial-value
+:#0000}@property --tw
+-gradient-to{syntax:\
+"<color>\";inherits:f
+alse;initial-value:#0
+000}@property --tw-gr
+adient-stops{syntax:\
+"*\";inherits:false}@
+property --tw-gradien
+t-via-stops{syntax:\"
+*\";inherits:false}@p
+roperty --tw-gradient
+-from-position{syntax
+:\"<length-percentage
+>\";inherits:false;in
+itial-value:0%}@prope
+rty --tw-gradient-via
+-position{syntax:\"<l
+ength-percentage>\";i
+nherits:false;initial
+-value:50%}@property 
+--tw-gradient-to-posi
+tion{syntax:\"<length
+-percentage>\";inheri
+ts:false;initial-valu
+e:100%}@property --tw
+-leading{syntax:\"*\"
+;inherits:false}@prop
+erty --tw-font-weight
+{syntax:\"*\";inherit
+s:false}@property --t
+w-tracking{syntax:\"*
+\";inherits:false}@pr
+operty --tw-shadow{sy
+ntax:\"*\";inherits:f
+alse;initial-value:0 
+0 #0000}@property --t
+w-shadow-color{syntax
+:\"*\";inherits:false
+}@property --tw-shado
+w-alpha{syntax:\"<per
+centage>\";inherits:f
+alse;initial-value:10
+0%}@property --tw-ins
+et-shadow{syntax:\"*\
+";inherits:false;init
+ial-value:0 0 
+#0000}@property --tw-
+inset-shadow-color{sy
+ntax:\"*\";inherits:f
+alse}@property --tw-i
+nset-shadow-alpha{syn
+tax:\"<percentage>\";
+inherits:false;initia
+l-value:100%}@propert
+y --tw-ring-color{syn
+tax:\"*\";inherits:fa
+lse}@property --tw-ri
+ng-shadow{syntax:\"*\
+";inherits:false;init
+ial-value:0 0 
+#0000}@property --tw-
+inset-ring-color{synt
+ax:\"*\";inherits:fal
+se}@property --tw-ins
+et-ring-shadow{syntax
+:\"*\";inherits:false
+;initial-value:0 0 
+#0000}@property --tw-
+ring-inset{syntax:\"*
+\";inherits:false}@pr
+operty --tw-ring-offs
+et-width{syntax:\"<le
+ngth>\";inherits:fals
+e;initial-value:0}@pr
+operty --tw-ring-offs
+et-color{syntax:\"*\"
+;inherits:false;initi
+al-value:#fff}@proper
+ty --tw-ring-offset-s
+hadow{syntax:\"*\";in
+herits:false;initial-
+value:0 0 
+#0000}@property --tw-
+blur{syntax:\"*\";inh
+erits:false}@property
+ --tw-brightness{synt
+ax:\"*\";inherits:fal
+se}@property --tw-con
+trast{syntax:\"*\";in
+herits:false}@propert
+y --tw-grayscale{synt
+ax:\"*\";inherits:fal
+se}@property --tw-hue
+-rotate{syntax:\"*\";
+inherits:false}@prope
+rty --tw-invert{synta
+x:\"*\";inherits:fals
+e}@property --tw-opac
+ity{syntax:\"*\";inhe
+rits:false}@property 
+--tw-saturate{syntax:
+\"*\";inherits:false}
+@property --tw-sepia{
+syntax:\"*\";inherits
+:false}@property --tw
+-drop-shadow{syntax:\
+"*\";inherits:false}@
+property --tw-drop-sh
+adow-color{syntax:\"*
+\";inherits:false}@pr
+operty --tw-drop-shad
+ow-alpha{syntax:\"<pe
+rcentage>\";inherits:
+false;initial-value:1
+00%}@property --tw-dr
+op-shadow-size{syntax
+:\"*\";inherits:false
+}@property --tw-backd
+rop-blur{syntax:\"*\"
+;inherits:false}@prop
+erty --tw-backdrop-br
+ightness{syntax:\"*\"
+;inherits:false}@prop
+erty --tw-backdrop-co
+ntrast{syntax:\"*\";i
+nherits:false}@proper
+ty --tw-backdrop-gray
+scale{syntax:\"*\";in
+herits:false}@propert
+y --tw-backdrop-hue-r
+otate{syntax:\"*\";in
+herits:false}@propert
+y --tw-backdrop-inver
+t{syntax:\"*\";inheri
+ts:false}@property --
+tw-backdrop-opacity{s
+yntax:\"*\";inherits:
+false}@property --tw-
+backdrop-saturate{syn
+tax:\"*\";inherits:fa
+lse}@property --tw-ba
+ckdrop-sepia{syntax:\
+"*\";inherits:false}@
+property --tw-duratio
+n{syntax:\"*\";inheri
+ts:false}@property --
+tw-ease{syntax:\"*\";
+inherits:false}@keyfr
+ames spin{to{transfor
+m:rotate(360deg)}}@ke
+yframes pulse{50%{opa
+city:.5}}", ""]);
+19 | // Exports
+20 | /* harmony 
+default export */ 
+const __WEBPACK_DEFAU
+LT_EXPORT__ = (___CSS
+_LOADER_EXPORT___);
+21 | 
+
+Import trace for 
+requested module:
+./app/globals.css
+
+
+> Build failed 
+because of webpack 
+errors

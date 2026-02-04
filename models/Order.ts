@@ -1,60 +1,104 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
+/**
+ * Order Item - SNAPSHOT DATA
+ */
 export interface IOrderItem {
     productId: mongoose.Types.ObjectId;
+    variantId: mongoose.Types.ObjectId;
     name: string;
+    sku: string;
     price: number;
     quantity: number;
-    size: string;
-    image: string;
 }
 
+/**
+ * Order Model - Snapshot Pricing
+ */
 export interface IOrder extends Document {
-    user?: mongoose.Types.ObjectId; // Optional for guest checkout
-    guestInfo?: {
-        name: string;
-        email: string;
-        phone: string;
-        address: string;
-    };
+    userId: mongoose.Types.ObjectId;
+    status: 'pending' | 'paid' | 'shipped' | 'delivered';
     items: IOrderItem[];
-    totalAmount: number;
-    status: 'pending' | 'paid' | 'shipped' | 'delivered' | 'cancelled';
-    paymentMethod: 'upi' | 'card' | 'cod';
-    paymentId?: string;
+    totals: {
+        subtotal: number;
+        tax: number;
+        shipping: number;
+        grandTotal: number;
+    };
+    payment: {
+        provider: string;
+        transactionId: string;
+        status: string;
+    };
+    shipping: {
+        address: Record<string, any>;
+        carrier?: string;
+        trackingNumber?: string;
+    };
+    fulfillment?: {
+        supplierOrderId?: string;
+        supplierStatus: 'unfulfilled' | 'pending' | 'ordered' | 'shipped';
+        costPrice?: number;
+        profit?: number;
+        lastUpdated?: Date;
+    };
     createdAt: Date;
-    updatedAt: Date;
 }
+
+const OrderItemSchema = new Schema({
+    productId: { type: Schema.Types.ObjectId, ref: 'Product', required: true },
+    variantId: { type: Schema.Types.ObjectId, required: true },
+    name: { type: String, required: true },
+    sku: { type: String, required: true },
+    price: { type: Number, required: true },
+    quantity: { type: Number, required: true, min: 1 }
+}, { _id: false });
+
+const FulfillmentSchema = new Schema({
+    supplierOrderId: { type: String },
+    supplierStatus: {
+        type: String,
+        enum: ['unfulfilled', 'pending', 'ordered', 'shipped'],
+        default: 'unfulfilled'
+    },
+    costPrice: { type: Number },
+    profit: { type: Number },
+    lastUpdated: { type: Date }
+}, { _id: false });
 
 const OrderSchema: Schema = new Schema(
     {
-        user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-        guestInfo: {
-            name: String,
-            email: String,
-            phone: String,
-            address: String,
-        },
-        items: [
-            {
-                productId: { type: mongoose.Schema.Types.ObjectId, ref: 'Product', required: true },
-                name: { type: String, required: true },
-                price: { type: Number, required: true },
-                quantity: { type: Number, required: true },
-                size: { type: String, required: true },
-                image: { type: String, required: true },
-            },
-        ],
-        totalAmount: { type: Number, required: true },
+        userId: { type: Schema.Types.ObjectId, ref: 'User', required: true },
         status: {
             type: String,
-            enum: ['pending', 'paid', 'shipped', 'delivered', 'cancelled'],
-            default: 'pending',
+            enum: ['pending', 'paid', 'shipped', 'delivered'],
+            default: 'pending'
         },
-        paymentMethod: { type: String, enum: ['upi', 'card', 'cod'], required: true },
-        paymentId: { type: String },
+        items: [OrderItemSchema],
+        totals: {
+            subtotal: { type: Number, required: true },
+            tax: { type: Number, required: true },
+            shipping: { type: Number, required: true },
+            grandTotal: { type: Number, required: true }
+        },
+        payment: {
+            provider: { type: String, required: true },
+            transactionId: { type: String },
+            status: { type: String, required: true }
+        },
+        shipping: {
+            address: { type: Schema.Types.Mixed, required: true },
+            carrier: { type: String },
+            trackingNumber: { type: String }
+        },
+        fulfillment: FulfillmentSchema
     },
     { timestamps: true }
 );
+
+// Indexes
+OrderSchema.index({ userId: 1 });
+OrderSchema.index({ status: 1 });
+OrderSchema.index({ createdAt: -1 });
 
 export default mongoose.models.Order || mongoose.model<IOrder>('Order', OrderSchema);

@@ -14,15 +14,15 @@ export default function ScrollReveal({ children, width = "100%", delay = 0 }: Sc
     const isInView = useInView(ref, { once: true, margin: "-50px" });
 
     return (
-        <div ref={ref} style={{ position: 'relative', width, overflow: 'hidden' }}>
+        <div ref={ref} style={{ position: 'relative', width }}>
             <motion.div
                 variants={{
-                    hidden: { opacity: 0, y: 75 },
-                    visible: { opacity: 1, y: 0 },
+                    hidden: { opacity: 0, y: 50, filter: 'blur(10px)' },
+                    visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
                 }}
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
-                transition={{ duration: 0.8, delay: delay, ease: "easeOut" }}
+                transition={{ duration: 1.0, delay: delay, ease: [0.22, 1, 0.36, 1] }}
             >
                 {children}
             </motion.div>

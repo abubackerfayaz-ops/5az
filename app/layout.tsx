@@ -1,15 +1,43 @@
 import type { Metadata } from "next";
-import { Unbounded, Outfit } from "next/font/google"; // Switched to Unbounded + Outfit
+import { Unbounded, Bricolage_Grotesque, Space_Mono, Syne, Plus_Jakarta_Sans, Outfit } from "next/font/google";
 import "./globals.css";
-import { CartProvider } from "@/context/CartContext";
+import Providers from "@/components/Providers";
+import Footer from "@/components/Footer";
 
-const unbounded = Unbounded({ subsets: ["latin"], variable: "--font-unbounded" });
-const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
+const displayFont = Unbounded({
+  subsets: ["latin"],
+  variable: "--font-display",
+  weight: ["700", "800", "900"]
+});
+const fancyFont = Bricolage_Grotesque({
+  subsets: ["latin"],
+  variable: "--font-fancy",
+  weight: ["300", "400", "500", "600", "700", "800"]
+});
+const aestheticFont = Syne({
+  subsets: ["latin"],
+  variable: "--font-aesthetic",
+  weight: ["400", "500", "600", "700", "800"]
+});
+const sansFont = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans-alt",
+  weight: ["400", "500", "600", "700", "800"]
+});
+const accentFont = Outfit({
+  subsets: ["latin"],
+  variable: "--font-accent",
+  weight: ["400", "500", "600", "700", "800", "900"]
+});
+const monoFont = Space_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  weight: ["400", "700"]
+});
 
 export const metadata: Metadata = {
-  title: "5AZ | ELITE FOOTBALL CULTURE & PREMIUM JERSEYS",
-  description: "India's premier destination for high-end football kits, retro classics, and exclusive streetwear. Join the culture. Wear the legacy.",
-  keywords: ["football jerseys", "retro jerseys", "5az", "football culture", "india football kits", "premium jerseys"],
+  title: "5AZ | ELITE FOOTBALL ARCHIVE",
+  description: "India's premier destination for high-end football kits and retro classics.",
 };
 
 export default function RootLayout({
@@ -19,12 +47,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${unbounded.variable} ${outfit.variable} font-sans antialiased bg-black text-white overflow-x-hidden`}>
-        <div className="bg-noise"></div>
-        <div className="bg-grid"></div>
-        <CartProvider>
+      <body className={`${displayFont.variable} ${fancyFont.variable} ${monoFont.variable} ${aestheticFont.variable} ${sansFont.variable} ${accentFont.variable} font-fancy antialiased overflow-x-hidden bg-[#000] text-white selection:bg-[#D9FF00] selection:text-black`}>
+        <Providers>
           {children}
-        </CartProvider>
+        </Providers>
+        <Footer />
       </body>
     </html>
   );
