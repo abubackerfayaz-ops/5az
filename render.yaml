@@ -8,6 +8,8 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+      - key: NODE_VERSION
+        value: 20
       - key: MONGODB_URI
         value: mongodb+srv://abufayaz:r8KFNrpWyn11R22v@cluster0.jmdh0hc.mongodb.net/
       - key: NEXTAUTH_SECRET
