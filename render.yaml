@@ -3,7 +3,7 @@ services:
     name: 5az-store
     env: node
     plan: free
-    buildCommand: npm install && npm run build
+    buildCommand: rm -rf .next && npm install && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
@@ -14,11 +14,11 @@ services:
         value: mongodb+srv://abufayaz:r8KFNrpWyn11R22v@cluster0.jmdh0hc.mongodb.net/
       - key: NEXTAUTH_SECRET
         value: changeme_dev_secret_123
+      - key: NEXTAUTH_URL
+        value: https://5az-store.onrender.com
       - key: RAZORPAY_KEY_ID
         value: rzp_test_placeholder
       - key: RAZORPAY_KEY_SECRET
         value: secret_placeholder
-      - key: NEXTAUTH_URL
-        value: https://5az-store.onrender.com
       - key: NEXT_PUBLIC_RAZORPAY_KEY_ID
         value: rzp_test_placeholder
