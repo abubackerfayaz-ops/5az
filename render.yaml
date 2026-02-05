@@ -3,13 +3,15 @@ services:
     name: 5az-store
     env: node
     plan: free
-    buildCommand: rm -rf .next && npm install && npm run build
+    buildCommand: powershell -Command "Remove-Item -Recurse -Force .next; npm install; npm run build"
     startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
       - key: NODE_VERSION
         value: 20
+      - key: NODE_OPTIONS
+        value: --max-old-space-size=512
       - key: MONGODB_URI
         value: mongodb+srv://abufayaz:r8KFNrpWyn11R22v@cluster0.jmdh0hc.mongodb.net/
       - key: NEXTAUTH_SECRET
