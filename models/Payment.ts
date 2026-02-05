@@ -20,7 +20,7 @@ const PaymentSchema: Schema = new Schema(
         orderId: { type: Schema.Types.ObjectId, ref: 'Order', required: true },
         userId: { type: Schema.Types.ObjectId, ref: 'User' },
         gateway: { type: String, default: 'RAZORPAY', required: true },
-        gatewayOrderId: { type: String, required: true, unique: true },
+        gatewayOrderId: { type: String, required: true, unique: true }, // Keep this index
         gatewayPaymentId: { type: String },
         gatewaySignature: { type: String },
         amount: { type: Number, required: true },
@@ -35,7 +35,8 @@ const PaymentSchema: Schema = new Schema(
     { timestamps: true }
 );
 
-PaymentSchema.index({ gatewayOrderId: 1 });
+// Indexes (removed duplicate - keeping only schema-level index)
+// PaymentSchema.index({ gatewayOrderId: 1 }); // Removed - already has unique: true in schema
 PaymentSchema.index({ orderId: 1 });
 
 export default mongoose.models.Payment || mongoose.model<IPayment>('Payment', PaymentSchema);

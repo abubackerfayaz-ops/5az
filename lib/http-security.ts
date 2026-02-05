@@ -38,7 +38,7 @@ export function getAPISecurityHeaders(): Record<string, string> {
         'X-Content-Type-Options': 'nosniff',
         'X-Frame-Options': 'DENY',
         'X-XSS-Protection': '1; mode=block',
-        'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
+        // 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains', // Removed for Render compatibility
         'Referrer-Policy': 'no-referrer',
         'Permissions-Policy': 'geolocation=(), microphone=(), camera=()',
         'Cache-Control': 'no-store, no-cache, must-revalidate, private',
@@ -48,10 +48,11 @@ export function getAPISecurityHeaders(): Record<string, string> {
 }
 
 /**
- * HSTS Preload configuration
+ * HSTS Preload configuration (DISABLED for Render compatibility)
  */
 export function getHSTSHeader(): string {
-    return 'max-age=63072000; includeSubDomains; preload';
+    // return 'max-age=63072000; includeSubDomains; preload'; // Disabled for Render compatibility
+    return '';
 }
 
 /**

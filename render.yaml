@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: 5az-archive
+    name: 5az-store
     env: node
     plan: free
     buildCommand: npm install && npm run build
@@ -19,6 +19,6 @@ services:
       - key: RAZORPAY_KEY_SECRET
         value: secret_placeholder
       - key: NEXTAUTH_URL
-        value: https://fiveaz.onrender.com
+        value: https://5az-store.onrender.com
       - key: NEXT_PUBLIC_RAZORPAY_KEY_ID
         value: rzp_test_placeholder

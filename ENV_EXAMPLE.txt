@@ -1,0 +1,17 @@
+# Environment Variables for 5AZ Store
+# Copy this file to .env.local for local development
+
+# MongoDB
+MONGODB_URI=mongodb+srv://abufayaz:r8KFNrpWyn11R22v@cluster0.jmdh0hc.mongodb.net/
+
+# NextAuth.js
+NEXTAUTH_SECRET=changeme_dev_secret_123
+NEXTAUTH_URL=https://your-app-name.onrender.com
+
+# Razorpay Payment Gateway
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+NEXT_PUBLIC_RAZORPAY_KEY_ID=your_razorpay_key_id
+
+# Node Environment
+NODE_ENV=production

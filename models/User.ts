@@ -17,7 +17,7 @@ export interface IUser extends Document {
 
 const UserSchema: Schema = new Schema(
     {
-        email: { type: String, required: true, unique: true, lowercase: true },
+        email: { type: String, required: true, unique: true, lowercase: true }, // Keep this index
         password: { type: String, required: true, select: false },
         name: {
             first: { type: String, required: true },
@@ -29,8 +29,8 @@ const UserSchema: Schema = new Schema(
     { timestamps: true }
 );
 
-// Indexes
-UserSchema.index({ email: 1 });
+// Indexes (removed duplicate - keeping only schema-level index)
+// UserSchema.index({ email: 1 }); // Removed - already has unique: true in schema
 UserSchema.index({ role: 1 });
 
 export default mongoose.models.User || mongoose.model<IUser>('User', UserSchema);

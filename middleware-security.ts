@@ -27,10 +27,10 @@ export async function middleware(request: NextRequest) {
     // Generate nonce for CSP
     const nonce = Buffer.from(crypto.randomUUID()).toString('base64');
 
-    // Security headers
+    // Security headers (HSTS removed to prevent Render proxy loops)
     const securityHeaders = {
         'X-DNS-Prefetch-Control': 'on',
-        'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload',
+        // 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload', // Removed for Render compatibility
         'X-XSS-Protection': '1; mode=block',
         'X-Frame-Options': 'SAMEORIGIN',
         'X-Content-Type-Options': 'nosniff',

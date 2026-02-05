@@ -48,7 +48,7 @@ export interface IProduct extends Document {
 }
 
 const ProductVariantSchema = new Schema({
-    sku: { type: String, required: true, unique: true },
+    sku: { type: String, required: true, unique: true }, // Keep this index
     attributes: {
         type: Map,
         of: String,
@@ -78,7 +78,7 @@ const ProductAttributeSchema = new Schema({
 const ProductSchema: Schema = new Schema(
     {
         name: { type: String, required: true },
-        slug: { type: String, required: true, unique: true },
+        slug: { type: String, required: true, unique: true }, // Keep this index
         description: { type: String, required: true },
         brand: { type: String, required: true },
         category: { type: String },
@@ -91,10 +91,10 @@ const ProductSchema: Schema = new Schema(
     { timestamps: true, bufferCommands: false }
 );
 
-// Indexes
-ProductSchema.index({ slug: 1 });
+// Indexes (removed duplicates - keeping only schema-level indexes)
+// ProductSchema.index({ slug: 1 }); // Removed - already has unique: true in schema
 ProductSchema.index({ categories: 1 });
-ProductSchema.index({ 'variants.sku': 1 });
+// ProductSchema.index({ 'variants.sku': 1 }); // Removed - already has unique: true in variant schema
 ProductSchema.index({ isActive: 1 });
 
 export default mongoose.models.Product || mongoose.model<IProduct>('Product', ProductSchema);
